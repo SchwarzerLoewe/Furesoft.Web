@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5BAEB3C1-A856-43A8-9C86-A37EB56ED8FE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lua</RootNamespace>
+    <AssemblyName>Lua</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Net.HttpListener">
+      <HintPath>..\packages\Mono.Net.HttpListener.1.0.0.0\lib\net40\Mono.Net.HttpListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Engine\Chunk\Assignment.cs" />
+    <Compile Include="Engine\Chunk\BreakStmt.cs" />
+    <Compile Include="Engine\Chunk\Chunk.cs" />
+    <Compile Include="Engine\Chunk\DoStmt.cs" />
+    <Compile Include="Engine\Chunk\ExprStmt.cs" />
+    <Compile Include="Engine\Chunk\ForInStmt.cs" />
+    <Compile Include="Engine\Chunk\ForStmt.cs" />
+    <Compile Include="Engine\Chunk\Function.cs" />
+    <Compile Include="Engine\Chunk\IfStmt.cs" />
+    <Compile Include="Engine\Chunk\LocalFunc.cs" />
+    <Compile Include="Engine\Chunk\LocalVar.cs" />
+    <Compile Include="Engine\Chunk\RepeatStmt.cs" />
+    <Compile Include="Engine\Chunk\ReturnStmt.cs" />
+    <Compile Include="Engine\Chunk\Statement.cs" />
+    <Compile Include="Engine\Chunk\WhileStmt.cs" />
+    <Compile Include="Engine\Expr\Access.cs" />
+    <Compile Include="Engine\Expr\BaseExpr.cs" />
+    <Compile Include="Engine\Expr\BoolLiteral.cs" />
+    <Compile Include="Engine\Expr\Expr.cs" />
+    <Compile Include="Engine\Expr\FunctionBody.cs" />
+    <Compile Include="Engine\Expr\FunctionCall.cs" />
+    <Compile Include="Engine\Expr\FunctionValue.cs" />
+    <Compile Include="Engine\Expr\GroupExpr.cs" />
+    <Compile Include="Engine\Expr\KeyAccess.cs" />
+    <Compile Include="Engine\Expr\MethodCall.cs" />
+    <Compile Include="Engine\Expr\NameAccess.cs" />
+    <Compile Include="Engine\Expr\NilLiteral.cs" />
+    <Compile Include="Engine\Expr\NumberLiteral.cs" />
+    <Compile Include="Engine\Expr\Operation.cs" />
+    <Compile Include="Engine\Expr\OperatorExpr.cs" />
+    <Compile Include="Engine\Expr\OperTable.cs" />
+    <Compile Include="Engine\Expr\PrimaryExpr.cs" />
+    <Compile Include="Engine\Expr\StringLiteral.cs" />
+    <Compile Include="Engine\Expr\TableConstructor.cs" />
+    <Compile Include="Engine\Expr\Term.cs" />
+    <Compile Include="Engine\Expr\VariableArg.cs" />
+    <Compile Include="Engine\Expr\VarName.cs" />
+    <Compile Include="Engine\Library\BaseLib.cs" />
+    <Compile Include="Engine\Library\FileLib.cs" />
+    <Compile Include="Engine\Library\IOLib.cs" />
+    <Compile Include="Engine\Library\MathLib.cs" />
+    <Compile Include="Engine\Library\OSLib.cs" />
+    <Compile Include="Engine\Library\StringLib.cs" />
+    <Compile Include="Engine\Library\TableLib.cs" />
+    <Compile Include="Engine\LuaInterpreter.cs" />
+    <Compile Include="Engine\LuaValue\LuaBoolean.cs" />
+    <Compile Include="Engine\LuaValue\LuaError.cs" />
+    <Compile Include="Engine\LuaValue\LuaFunction.cs" />
+    <Compile Include="Engine\LuaValue\LuaMultiValue.cs" />
+    <Compile Include="Engine\LuaValue\LuaNil.cs" />
+    <Compile Include="Engine\LuaValue\LuaNumber.cs" />
+    <Compile Include="Engine\LuaValue\LuaString.cs" />
+    <Compile Include="Engine\LuaValue\LuaTable.cs" />
+    <Compile Include="Engine\LuaValue\LuaUserdata.cs" />
+    <Compile Include="Engine\LuaValue\LuaValue.cs" />
+    <Compile Include="Engine\Parser\Parser.cs" />
+    <Compile Include="Engine\Parser\ParserInput.cs" />
+    <Compile Include="Engine\Parser\Syntax\Access.cs" />
+    <Compile Include="Engine\Parser\Syntax\Args.cs" />
+    <Compile Include="Engine\Parser\Syntax\Assignment.cs" />
+    <Compile Include="Engine\Parser\Syntax\BaseExpr.cs" />
+    <Compile Include="Engine\Parser\Syntax\BoolLiteral.cs" />
+    <Compile Include="Engine\Parser\Syntax\BreakStmt.cs" />
+    <Compile Include="Engine\Parser\Syntax\Chunk.cs" />
+    <Compile Include="Engine\Parser\Syntax\DoStmt.cs" />
+    <Compile Include="Engine\Parser\Syntax\ElseifBlock.cs" />
+    <Compile Include="Engine\Parser\Syntax\Expr.cs" />
+    <Compile Include="Engine\Parser\Syntax\ExprStmt.cs" />
+    <Compile Include="Engine\Parser\Syntax\Field.cs" />
+    <Compile Include="Engine\Parser\Syntax\ForInStmt.cs" />
+    <Compile Include="Engine\Parser\Syntax\ForStmt.cs" />
+    <Compile Include="Engine\Parser\Syntax\Function.cs" />
+    <Compile Include="Engine\Parser\Syntax\FunctionBody.cs" />
+    <Compile Include="Engine\Parser\Syntax\FunctionCall.cs" />
+    <Compile Include="Engine\Parser\Syntax\FunctionName.cs" />
+    <Compile Include="Engine\Parser\Syntax\FunctionValue.cs" />
+    <Compile Include="Engine\Parser\Syntax\GroupExpr.cs" />
+    <Compile Include="Engine\Parser\Syntax\IfStmt.cs" />
+    <Compile Include="Engine\Parser\Syntax\ItemValue.cs" />
+    <Compile Include="Engine\Parser\Syntax\KeyAccess.cs" />
+    <Compile Include="Engine\Parser\Syntax\KeyValue.cs" />
+    <Compile Include="Engine\Parser\Syntax\LocalFunc.cs" />
+    <Compile Include="Engine\Parser\Syntax\LocalVar.cs" />
+    <Compile Include="Engine\Parser\Syntax\MethodCall.cs" />
+    <Compile Include="Engine\Parser\Syntax\NameAccess.cs" />
+    <Compile Include="Engine\Parser\Syntax\NameValue.cs" />
+    <Compile Include="Engine\Parser\Syntax\NilLiteral.cs" />
+    <Compile Include="Engine\Parser\Syntax\NumberLiteral.cs" />
+    <Compile Include="Engine\Parser\Syntax\OperatorExpr.cs" />
+    <Compile Include="Engine\Parser\Syntax\ParamList.cs" />
+    <Compile Include="Engine\Parser\Syntax\PrimaryExpr.cs" />
+    <Compile Include="Engine\Parser\Syntax\RepeatStmt.cs" />
+    <Compile Include="Engine\Parser\Syntax\ReturnStmt.cs" />
+    <Compile Include="Engine\Parser\Syntax\Statement.cs" />
+    <Compile Include="Engine\Parser\Syntax\StringLiteral.cs" />
+    <Compile Include="Engine\Parser\Syntax\TableConstructor.cs" />
+    <Compile Include="Engine\Parser\Syntax\Term.cs" />
+    <Compile Include="Engine\Parser\Syntax\Var.cs" />
+    <Compile Include="Engine\Parser\Syntax\VariableArg.cs" />
+    <Compile Include="Engine\Parser\Syntax\VarName.cs" />
+    <Compile Include="Engine\Parser\Syntax\WhileStmt.cs" />
+    <Compile Include="Engine\Parser\TextInput.cs" />
+    <Compile Include="Engine\Parser\TextParserCommon.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Furesoft.Web\Furesoft.Web.csproj">
+      <Project>{4C001EB8-72B1-4B67-BBC6-CD7785CB82A6}</Project>
+      <Name>Furesoft.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

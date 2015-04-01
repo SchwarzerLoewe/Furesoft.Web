@@ -1,0 +1,21 @@
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\PHP\bin\Debug\PHP.dll
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\PHP\bin\Debug\PHP.pdb
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\PHP\obj\Debug\PHP.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\PHP\obj\Debug\PHP.dll
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\PHP\obj\Debug\PHP.pdb
+D:\Projects\Furesoft.Web\PHP\obj\Debug\PHP.csprojResolveAssemblyReference.cache
+D:\Projects\Furesoft.Web\PHP\obj\Debug\PHP.dll
+D:\Projects\Furesoft.Web\PHP\obj\Debug\PHP.pdb
+D:\Projects\Furesoft.Web\PHP\bin\Debug\PHP.dll
+D:\Projects\Furesoft.Web\PHP\bin\Debug\PHP.pdb
+D:\Projects\Furesoft.Web\PHP\bin\Debug\Furesoft.Web.dll
+D:\Projects\Furesoft.Web\PHP\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\PHP\obj\Debug\PHP.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\PHP\bin\Debug\PHP.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\PHP\bin\Debug\PHP.pdb
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\PHP\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\PHP\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\PHP\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\PHP\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\PHP\obj\Debug\PHP.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\PHP\obj\Debug\PHP.pdb

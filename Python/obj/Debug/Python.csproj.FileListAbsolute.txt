@@ -1,0 +1,28 @@
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\Python\bin\Debug\Python.dll
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\Python\bin\Debug\Python.pdb
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\Python\obj\Debug\Python.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\Python\obj\Debug\Python.dll
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\Python\obj\Debug\Python.pdb
+D:\Projects\Furesoft.Web\Python\obj\Debug\Python.csprojResolveAssemblyReference.cache
+D:\Projects\Furesoft.Web\Python\obj\Debug\Python.dll
+D:\Projects\Furesoft.Web\Python\obj\Debug\Python.pdb
+D:\Projects\Furesoft.Web\Python\bin\Debug\Python.dll
+D:\Projects\Furesoft.Web\Python\bin\Debug\Python.pdb
+D:\Projects\Furesoft.Web\Python\bin\Debug\Furesoft.Web.dll
+D:\Projects\Furesoft.Web\Python\bin\Debug\IronPython.dll
+D:\Projects\Furesoft.Web\Python\bin\Debug\IronPython.Modules.dll
+D:\Projects\Furesoft.Web\Python\bin\Debug\Microsoft.Dynamic.dll
+D:\Projects\Furesoft.Web\Python\bin\Debug\Microsoft.Scripting.dll
+D:\Projects\Furesoft.Web\Python\bin\Debug\Microsoft.Scripting.Metadata.dll
+D:\Projects\Furesoft.Web\Python\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Python\obj\Debug\Python.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Python\bin\Debug\Python.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Python\bin\Debug\Python.pdb
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Python\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Python\bin\Debug\IronPython.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Python\bin\Debug\IronPython.Modules.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Python\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Python\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Python\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Python\obj\Debug\Python.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Python\obj\Debug\Python.pdb

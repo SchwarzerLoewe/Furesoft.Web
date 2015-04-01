@@ -1,0 +1,21 @@
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\JS\bin\Debug\JS.dll
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\JS\bin\Debug\JS.pdb
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\JS\obj\Debug\JS.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\JS\obj\Debug\JS.dll
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\JS\obj\Debug\JS.pdb
+D:\Projects\Furesoft.Web\JS\obj\Debug\JS.csprojResolveAssemblyReference.cache
+D:\Projects\Furesoft.Web\JS\obj\Debug\JS.dll
+D:\Projects\Furesoft.Web\JS\obj\Debug\JS.pdb
+D:\Projects\Furesoft.Web\JS\bin\Debug\JS.dll
+D:\Projects\Furesoft.Web\JS\bin\Debug\JS.pdb
+D:\Projects\Furesoft.Web\JS\bin\Debug\Furesoft.Web.dll
+D:\Projects\Furesoft.Web\JS\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\JS\bin\Debug\JS.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\JS\bin\Debug\JS.pdb
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\JS\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\JS\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\JS\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\JS\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\JS\obj\Debug\JS.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\JS\obj\Debug\JS.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\JS\obj\Debug\JS.pdb

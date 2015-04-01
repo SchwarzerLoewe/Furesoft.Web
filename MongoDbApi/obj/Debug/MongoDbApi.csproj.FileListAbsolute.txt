@@ -1,0 +1,4 @@
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\MongoDbApi\bin\Debug\MongoDbApi.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\MongoDbApi\bin\Debug\MongoDbApi.pdb
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\MongoDbApi\obj\Debug\MongoDbApi.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\MongoDbApi\obj\Debug\MongoDbApi.pdb

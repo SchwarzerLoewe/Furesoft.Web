@@ -1,0 +1,11 @@
+D:\Projects\Furesoft.Web\Test\obj\Debug\Test.exe
+D:\Projects\Furesoft.Web\Test\obj\Debug\Test.pdb
+D:\Projects\Furesoft.Web\Test\bin\Debug\Test.exe
+D:\Projects\Furesoft.Web\Test\bin\Debug\Test.pdb
+D:\Projects\Furesoft.Web\Test\bin\Debug\CSharp.dll
+D:\Projects\Furesoft.Web\Test\bin\Debug\Furesoft.Web.dll
+D:\Projects\Furesoft.Web\Test\bin\Debug\CSharp.pdb
+D:\Projects\Furesoft.Web\Test\bin\Debug\Furesoft.Web.pdb
+D:\Projects\Furesoft.Web\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\WINDOWS\System32\obj\Debug\Test.exe
+C:\WINDOWS\System32\obj\Debug\Test.pdb

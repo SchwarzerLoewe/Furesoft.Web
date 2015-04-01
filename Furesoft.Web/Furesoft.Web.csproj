@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C001EB8-72B1-4B67-BBC6-CD7785CB82A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Furesoft.Web</RootNamespace>
+    <AssemblyName>Furesoft.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Net.HttpListener">
+      <HintPath>..\packages\Mono.Net.HttpListener.1.0.0.0\lib\net40\Mono.Net.HttpListener.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\packages\Mono.Net.HttpListener.1.0.0.0\lib\net40\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInitializer.cs" />
+    <Compile Include="AssemblyPageResolver.cs" />
+    <Compile Include="Component.cs" />
+    <Compile Include="Internal\Functions.cs" />
+    <Compile Include="Internal\IniFile.cs" />
+    <Compile Include="Internal\TemplateEngine\ArgumentCollection.cs" />
+    <Compile Include="Internal\TemplateEngine\CompoundGenerator.cs" />
+    <Compile Include="Internal\TemplateEngine\ConditionTagDefinition.cs" />
+    <Compile Include="Internal\TemplateEngine\ContentTagDefinition.cs" />
+    <Compile Include="Internal\TemplateEngine\Context.cs" />
+    <Compile Include="Internal\TemplateEngine\ContextParameter.cs" />
+    <Compile Include="Internal\TemplateEngine\EachTagDefinition.cs" />
+    <Compile Include="Internal\TemplateEngine\ElifTagDefinition.cs" />
+    <Compile Include="Internal\TemplateEngine\ElseTagDefinition.cs" />
+    <Compile Include="Internal\TemplateEngine\FormatCompiler.cs" />
+    <Compile Include="Internal\TemplateEngine\Generator.cs" />
+    <Compile Include="Internal\TemplateEngine\IArgument.cs" />
+    <Compile Include="Internal\TemplateEngine\IfTagDefinition.cs" />
+    <Compile Include="Internal\TemplateEngine\IGenerator.cs" />
+    <Compile Include="Internal\TemplateEngine\IndexTagDefinition.cs" />
+    <Compile Include="Internal\TemplateEngine\InlineGenerator.cs" />
+    <Compile Include="Internal\TemplateEngine\InlineTagDefinition.cs" />
+    <Compile Include="Internal\TemplateEngine\KeyFoundEventArgs.cs" />
+    <Compile Include="Internal\TemplateEngine\KeyGenerator.cs" />
+    <Compile Include="Internal\TemplateEngine\KeyNotFoundEventArgs.cs" />
+    <Compile Include="Internal\TemplateEngine\MasterTagDefinition.cs" />
+    <Compile Include="Internal\TemplateEngine\NestedContext.cs" />
+    <Compile Include="Internal\TemplateEngine\NewlineTagDefinition.cs" />
+    <Compile Include="Internal\TemplateEngine\NumberArgument.cs" />
+    <Compile Include="Internal\TemplateEngine\PlaceholderArgument.cs" />
+    <Compile Include="Internal\TemplateEngine\PlaceholderFoundEventArgs.cs" />
+    <Compile Include="Internal\TemplateEngine\PropertyDictionary.cs" />
+    <Compile Include="Internal\TemplateEngine\RegexHelper.cs" />
+    <Compile Include="Internal\TemplateEngine\Scope.cs" />
+    <Compile Include="Internal\TemplateEngine\SetTagDefinition.cs" />
+    <Compile Include="Internal\TemplateEngine\StaticGenerator.cs" />
+    <Compile Include="Internal\TemplateEngine\StringArgument.cs" />
+    <Compile Include="Internal\TemplateEngine\TagDefinition.cs" />
+    <Compile Include="Internal\TemplateEngine\TagParameter.cs" />
+    <Compile Include="Internal\TemplateEngine\UpcastDictionary.cs" />
+    <Compile Include="Internal\TemplateEngine\ValueRequestEventArgs.cs" />
+    <Compile Include="Internal\TemplateEngine\VariableArgument.cs" />
+    <Compile Include="Internal\TemplateEngine\VariableFoundEventArgs.cs" />
+    <Compile Include="Internal\TemplateEngine\WithTagDefinition.cs" />
+    <Compile Include="ModuleSystem\IModule.cs" />
+    <Compile Include="ModuleSystem\Module.cs" />
+    <Compile Include="ModuleSystem\ModuleCache.cs" />
+    <Compile Include="Modules\RewriteRuleModule.cs" />
+    <Compile Include="Get.cs" />
+    <Compile Include="HttpInfo.cs" />
+    <Compile Include="Internal\Access.cs" />
+    <Compile Include="Internal\Map.cs" />
+    <Compile Include="HTML\crc32.cs" />
+    <Compile Include="HTML\EncodingFoundException.cs" />
+    <Compile Include="HTML\HtmlAttribute.cs" />
+    <Compile Include="HTML\HtmlAttributeCollection.cs" />
+    <Compile Include="HTML\HtmlCmdLine.cs" />
+    <Compile Include="HTML\HtmlCommentNode.cs" />
+    <Compile Include="HTML\HtmlConsoleListener.cs" />
+    <Compile Include="HTML\HtmlDocument.cs" />
+    <Compile Include="HTML\HtmlDocument.PathMethods.cs" />
+    <Compile Include="HTML\HtmlDocument.Xpath.cs" />
+    <Compile Include="HTML\HtmlElementFlag.cs" />
+    <Compile Include="HTML\HtmlEntity.cs" />
+    <Compile Include="HTML\HtmlNameTable.cs" />
+    <Compile Include="HTML\HtmlNode.cs" />
+    <Compile Include="HTML\HtmlNode.Xpath.cs" />
+    <Compile Include="HTML\HtmlNodeCollection.cs" />
+    <Compile Include="HTML\HtmlNodeNavigator.cs" />
+    <Compile Include="HTML\HtmlNodeType.cs" />
+    <Compile Include="HTML\HtmlParseError.cs" />
+    <Compile Include="HTML\HtmlParseErrorCode.cs" />
+    <Compile Include="HTML\HtmlTextNode.cs" />
+    <Compile Include="HTML\HtmlWeb.cs" />
+    <Compile Include="HTML\HtmlWeb.Xpath.cs" />
+    <Compile Include="HTML\HtmlWebException.cs" />
+    <Compile Include="HTML\IOLibrary.cs" />
+    <Compile Include="HTML\MixedCodeDocument.cs" />
+    <Compile Include="HTML\MixedCodeDocumentCodeFragment.cs" />
+    <Compile Include="HTML\MixedCodeDocumentFragment.cs" />
+    <Compile Include="HTML\MixedCodeDocumentFragmentList.cs" />
+    <Compile Include="HTML\MixedCodeDocumentFragmentType.cs" />
+    <Compile Include="HTML\MixedCodeDocumentTextFragment.cs" />
+    <Compile Include="HTML\NameValuePair.cs" />
+    <Compile Include="HTML\NameValuePairList.cs" />
+    <Compile Include="HTML\Trace.cs" />
+    <Compile Include="HTML\Trace.FullFramework.cs" />
+    <Compile Include="HTML\Utilities.cs" />
+    <Compile Include="Internal\HtAccess\Block.cs" />
+    <Compile Include="Internal\HtAccess\Directive.cs" />
+    <Compile Include="Internal\HtAccess\ICommand.cs" />
+    <Compile Include="Internal\HtAccess\Parser.cs" />
+    <Compile Include="Internal\PostRequest.cs" />
+    <Compile Include="Internal\TagMatcher.cs" />
+    <Compile Include="Internal\TagResult.cs" />
+    <Compile Include="Internal\User.cs" />
+    <Compile Include="IScriptLanguage.cs" />
+    <Compile Include="Mime.cs" />
+    <Compile Include="Modules\AccessModule.cs" />
+    <Compile Include="Modules\LoggerModule.cs" />
+    <Compile Include="Modules\RouteModule.cs" />
+    <Compile Include="Modules\RuleMatcher.cs" />
+    <Compile Include="Page.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RouteAttribute.cs" />
+    <Compile Include="ScriptingTypes\XmlHttpRequest.cs" />
+    <Compile Include="StandardScriptAPI.cs" />
+    <Compile Include="UI\Link.cs" />
+    <Compile Include="UI\Button.cs" />
+    <Compile Include="UI\Style.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="WebConfig.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="References\Mono.Net.HttpListener.dll" />
+    <Content Include="References\Mono.Security.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

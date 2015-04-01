@@ -1,0 +1,13 @@
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\CPP\bin\Debug\CPP.dll
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\CPP\bin\Debug\CPP.pdb
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\CPP\obj\Debug\CPP.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\CPP\obj\Debug\CPP.dll
+C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft.Web\CPP\obj\Debug\CPP.pdb
+D:\Projects\Furesoft.Web\CPP\obj\Debug\CPP.csprojResolveAssemblyReference.cache
+D:\Projects\Furesoft.Web\CPP\obj\Debug\CPP.dll
+D:\Projects\Furesoft.Web\CPP\obj\Debug\CPP.pdb
+D:\Projects\Furesoft.Web\CPP\bin\Debug\CPP.dll
+D:\Projects\Furesoft.Web\CPP\bin\Debug\CPP.pdb
+D:\Projects\Furesoft.Web\CPP\bin\Debug\Furesoft.Web.dll
+D:\Projects\Furesoft.Web\CPP\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\CPP\obj\Debug\CPP.csprojResolveAssemblyReference.cache

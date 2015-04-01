@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD9C8875-C256-4777-A908-0B2226A8A59D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nemerle</RootNamespace>
+    <AssemblyName>Nemerle</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Net.HttpListener">
+      <HintPath>..\packages\Mono.Net.HttpListener.1.0.0.0\lib\net40\Mono.Net.HttpListener.dll</HintPath>
+    </Reference>
+    <Reference Include="Nemerle, Version=1.2.0.413, Culture=neutral, PublicKeyToken=e080a9c724e2bfcd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\Nemerle.dll</HintPath>
+    </Reference>
+    <Reference Include="Nemerle.Compiler, Version=1.2.0.413, Culture=neutral, PublicKeyToken=5291d186334f6101, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>References\Nemerle.Compiler.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Language.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="References\AsyncTargetingPack-EULA.html" />
+    <Content Include="References\CSharpParser.dll" />
+    <Content Include="References\CSharpParser.xml" />
+    <Content Include="References\fsmtest.exe" />
+    <Content Include="References\fsmtest_release.xml" />
+    <Content Include="References\Microsoft.CompilerServices.AsyncTargetingPack.Net4.dll" />
+    <Content Include="References\Microsoft.CompilerServices.AsyncTargetingPack.Net4.xml" />
+    <Content Include="References\mscorlib.dll" />
+    <Content Include="References\ncc.exe" />
+    <Content Include="References\ncc.parser.csharp.dll" />
+    <Content Include="References\ncc.xml" />
+    <Content Include="References\ncc32.exe" />
+    <Content Include="References\ncc64.exe" />
+    <Content Include="References\Nemerle.ActivePatterns.dll" />
+    <Content Include="References\Nemerle.ActivePatterns.xml" />
+    <Content Include="References\Nemerle.Aop.dll" />
+    <Content Include="References\Nemerle.Async.dll" />
+    <Content Include="References\Nemerle.Async.Macros.dll" />
+    <Content Include="References\Nemerle.Async.Macros.xml" />
+    <Content Include="References\Nemerle.Async.xml" />
+    <Content Include="References\Nemerle.Compiler.dll" />
+    <Content Include="References\Nemerle.Compiler.Test.exe" />
+    <Content Include="References\Nemerle.Compiler.Test.xml" />
+    <Content Include="References\Nemerle.Compiler.xml" />
+    <Content Include="References\Nemerle.ComputationExpressions.dll" />
+    <Content Include="References\Nemerle.ComputationExpressions.Macros.dll" />
+    <Content Include="References\Nemerle.ComputationExpressions.Macros.xml" />
+    <Content Include="References\Nemerle.ComputationExpressions.xml" />
+    <Content Include="References\Nemerle.Diff.dll" />
+    <Content Include="References\Nemerle.Diff.xml" />
+    <Content Include="References\Nemerle.dll" />
+    <Content Include="References\Nemerle.Evaluation.dll" />
+    <Content Include="References\Nemerle.Linq.dll" />
+    <Content Include="References\Nemerle.Macros.dll" />
+    <Content Include="References\Nemerle.Macros.xml" />
+    <Content Include="References\Nemerle.MSBuild.Tasks.dll" />
+    <Content Include="References\Nemerle.NAnt.Tasks.dll" />
+    <Content Include="References\Nemerle.Peg-VS_2010.xml" />
+    <Content Include="References\Nemerle.Peg.dll" />
+    <Content Include="References\Nemerle.Peg.Macros-VS_2010.xml" />
+    <Content Include="References\Nemerle.Peg.Macros.dll" />
+    <Content Include="References\Nemerle.Peg.Macros.xml" />
+    <Content Include="References\Nemerle.Peg.xml" />
+    <Content Include="References\Nemerle.Statechart.dll" />
+    <Content Include="References\Nemerle.Statechart.Lib.dll" />
+    <Content Include="References\Nemerle.Statechart.Lib.xml" />
+    <Content Include="References\Nemerle.Statechart.Runtime.dll" />
+    <Content Include="References\Nemerle.Statechart.Runtime.xml" />
+    <Content Include="References\Nemerle.Statechart.xml" />
+    <Content Include="References\Nemerle.Test.Framework.dll" />
+    <Content Include="References\Nemerle.Test.Framework.xml" />
+    <Content Include="References\Nemerle.Unsafe.dll" />
+    <Content Include="References\Nemerle.Unsafe.xml" />
+    <Content Include="References\Nemerle.VirtualStatics.dll" />
+    <Content Include="References\Nemerle.VirtualStatics.xml" />
+    <Content Include="References\Nemerle.WPF.dll" />
+    <Content Include="References\Nemerle.WPF.xml" />
+    <Content Include="References\Nemerle.xml" />
+    <Content Include="References\Nemerle.Xml.Macro.dll" />
+    <Content Include="References\Nemerle.Xml.Macro.xml" />
+    <Content Include="References\nemish.exe" />
+    <Content Include="References\NewObjectMacro.dll" />
+    <Content Include="References\NewObjectMacro.xml" />
+    <Content Include="References\policy.1.2.Nemerle.Compiler.dll" />
+    <Content Include="References\policy.1.2.Nemerle.dll" />
+    <Content Include="References\policy.1.2.Nemerle.Macros.dll" />
+    <Content Include="References\System.Data.dll" />
+    <Content Include="References\System.Data.OracleClient.dll" />
+    <Content Include="References\System.EnterpriseServices.dll" />
+    <Content Include="References\System.EnterpriseServices.Wrapper.dll" />
+    <Content Include="References\System.Transactions.dll" />
+    <Content Include="References\System.Web.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="References\ncc.exe.res" />
+    <None Include="References\ncc32.exe.res" />
+    <None Include="References\ncc64.exe.res" />
+    <None Include="References\Nemerle.Compiler.dll.res" />
+    <None Include="References\Nemerle.dll.res" />
+    <None Include="References\Nemerle.Macros.dll.res" />
+    <None Include="References\Nemerle.MSBuild.targets" />
+    <None Include="References\Nemerle.MSBuild.Tasks.dll.res" />
+    <None Include="References\nemish.exe.config" />
+    <None Include="References\normidna.nlp" />
+    <None Include="References\normnfc.nlp" />
+    <None Include="References\normnfd.nlp" />
+    <None Include="References\normnfkc.nlp" />
+    <None Include="References\normnfkd.nlp" />
+    <None Include="References\policy.1.2.Nemerle.Compiler.config" />
+    <None Include="References\policy.1.2.Nemerle.Compiler.dll.res" />
+    <None Include="References\policy.1.2.Nemerle.config" />
+    <None Include="References\policy.1.2.Nemerle.dll.res" />
+    <None Include="References\policy.1.2.Nemerle.Macros.config" />
+    <None Include="References\policy.1.2.Nemerle.Macros.dll.res" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Furesoft.Web\Furesoft.Web.csproj">
+      <Project>{4C001EB8-72B1-4B67-BBC6-CD7785CB82A6}</Project>
+      <Name>Furesoft.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
