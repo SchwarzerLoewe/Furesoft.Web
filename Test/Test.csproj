@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD403541-DDD1-4D7F-8ED5-665506C3AA1D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Data\index.cs" />
+    <None Include="bin\Debug\Data\test.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSharp\CSharp.csproj">
+      <Project>{e8e183cb-1236-4a72-8986-2da4f4d3ef11}</Project>
+      <Name>CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Furesoft.Web\Furesoft.Web.csproj">
+      <Project>{4C001EB8-72B1-4B67-BBC6-CD7785CB82A6}</Project>
+      <Name>Furesoft.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Data\.htaccess" />
+    <None Include="bin\Debug\Data\.htpasswd" />
+    <None Include="bin\Debug\Data\fonts\fontawesome-webfont.eot" />
+    <None Include="bin\Debug\Data\fonts\fontawesome-webfont.ttf" />
+    <None Include="bin\Debug\Data\fonts\fontawesome-webfont.woff" />
+    <None Include="bin\Debug\Data\fonts\FontAwesome.otf" />
+    <None Include="bin\Debug\Data\index.jsa" />
+    <None Include="bin\Debug\Data\index.php" />
+    <None Include="bin\Debug\Data\sass\ie\v8.scss" />
+    <None Include="bin\Debug\Data\sass\ie\v9.scss" />
+    <None Include="bin\Debug\Data\sass\style-mobile.scss" />
+    <None Include="bin\Debug\Data\sass\style-mobilep.scss" />
+    <None Include="bin\Debug\Data\sass\style-normal.scss" />
+    <None Include="bin\Debug\Data\sass\style-noscript.scss" />
+    <None Include="bin\Debug\Data\sass\style-wide.scss" />
+    <None Include="bin\Debug\Data\sass\style.scss" />
+    <None Include="bin\Debug\Data\sass\_mixins.scss" />
+    <None Include="bin\Debug\Data\sass\_vars.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Data\bild.bmp" />
+    <Content Include="bin\Debug\Data\bild.png" />
+    <Content Include="bin\Debug\Data\css\font-awesome.min.css" />
+    <Content Include="bin\Debug\Data\css\ie\html5shiv.js" />
+    <Content Include="bin\Debug\Data\css\ie\images\footer.png" />
+    <Content Include="bin\Debug\Data\css\ie\images\footer.svg" />
+    <Content Include="bin\Debug\Data\css\ie\PIE.htc" />
+    <Content Include="bin\Debug\Data\css\ie\v8.css" />
+    <Content Include="bin\Debug\Data\css\ie\v9.css" />
+    <Content Include="bin\Debug\Data\css\images\bg.jpg" />
+    <Content Include="bin\Debug\Data\css\images\overlay-pattern.png" />
+    <Content Include="bin\Debug\Data\css\images\overlay.svg" />
+    <Content Include="bin\Debug\Data\css\skel.css" />
+    <Content Include="bin\Debug\Data\css\style-mobile.css" />
+    <Content Include="bin\Debug\Data\css\style-mobilep.css" />
+    <Content Include="bin\Debug\Data\css\style-normal.css" />
+    <Content Include="bin\Debug\Data\css\style-noscript.css" />
+    <Content Include="bin\Debug\Data\css\style-wide.css" />
+    <Content Include="bin\Debug\Data\css\style.css" />
+    <Content Include="bin\Debug\Data\default.html" />
+    <Content Include="bin\Debug\Data\Errors\404.html" />
+    <Content Include="bin\Debug\Data\fonts\fontawesome-webfont.svg" />
+    <Content Include="bin\Debug\Data\index.html" />
+    <Content Include="bin\Debug\Data\js\init.js" />
+    <Content Include="bin\Debug\Data\js\skel.min.js" />
+    <Content Include="bin\Debug\Data\LICENSE.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

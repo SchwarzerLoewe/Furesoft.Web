@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB754852-BDE4-45BB-B0A9-0133741E4A8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VBScript</RootNamespace>
+    <AssemblyName>VBScript</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Net.HttpListener">
+      <HintPath>..\packages\Mono.Net.HttpListener.1.0.0.0\lib\net40\Mono.Net.HttpListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Engine\BindSignature.cs" />
+    <Compile Include="Engine\ByRefArg.cs" />
+    <Compile Include="Engine\ContinuationCallback.cs" />
+    <Compile Include="Engine\DelegateFactory.cs" />
+    <Compile Include="Engine\DelegateFactory.Generated.cs" />
+    <Compile Include="Engine\ExtensionMethods.cs" />
+    <Compile Include="Engine\HostEvent.cs" />
+    <Compile Include="Engine\HostFunctions.cs" />
+    <Compile Include="Engine\HostIndexedProperty.cs" />
+    <Compile Include="Engine\HostItem.cs" />
+    <Compile Include="Engine\HostItem.InvokeMethod.cs" />
+    <Compile Include="Engine\HostItem.Members.cs" />
+    <Compile Include="Engine\HostItemFlags.cs" />
+    <Compile Include="Engine\HostMethod.cs" />
+    <Compile Include="Engine\HostObject.cs" />
+    <Compile Include="Engine\HostTarget.cs" />
+    <Compile Include="Engine\HostTargetFlags.cs" />
+    <Compile Include="Engine\HostType.cs" />
+    <Compile Include="Engine\HostTypeCollection.cs" />
+    <Compile Include="Engine\HostVariable.cs" />
+    <Compile Include="Engine\IScriptableObject.cs" />
+    <Compile Include="Engine\IScriptEngineException.cs" />
+    <Compile Include="Engine\NoScriptAccessAttribute.cs" />
+    <Compile Include="Engine\PropertyBag.cs" />
+    <Compile Include="Engine\ScriptAccess.cs" />
+    <Compile Include="Engine\ScriptEngine.cs" />
+    <Compile Include="Engine\ScriptEngineException.cs" />
+    <Compile Include="Engine\ScriptInterruptedException.cs" />
+    <Compile Include="Engine\ScriptItem.cs" />
+    <Compile Include="Engine\ScriptMemberAttribute.cs" />
+    <Compile Include="Engine\ScriptMemberFlags.cs" />
+    <Compile Include="Engine\ScriptMethod.cs" />
+    <Compile Include="Engine\ScriptUsageAttribute.cs" />
+    <Compile Include="Engine\Undefined.cs" />
+    <Compile Include="Engine\Util\ArrayHelpers.cs" />
+    <Compile Include="Engine\Util\AssemblyHelpers.cs" />
+    <Compile Include="Engine\Util\ConcurrentWeakSet.cs" />
+    <Compile Include="Engine\Util\DynamicHelpers.cs" />
+    <Compile Include="Engine\Util\EnumerableHelpers.cs" />
+    <Compile Include="Engine\Util\IDynamic.cs" />
+    <Compile Include="Engine\Util\InvokeHelpers.cs" />
+    <Compile Include="Engine\Util\IScriptMarshalWrapper.cs" />
+    <Compile Include="Engine\Util\MemberHelpers.cs" />
+    <Compile Include="Engine\Util\MiscHelpers.cs" />
+    <Compile Include="Engine\Util\Nonexistent.cs" />
+    <Compile Include="Engine\Util\ObjectHelpers.cs" />
+    <Compile Include="Engine\Util\RawCOMHelpers.cs" />
+    <Compile Include="Engine\Util\SpecialMemberNames.cs" />
+    <Compile Include="Engine\Util\SpecialParamNames.cs" />
+    <Compile Include="Engine\Util\TypeHelpers.cs" />
+    <Compile Include="Engine\Util\UniqueNameManager.cs" />
+    <Compile Include="Engine\VoidResult.cs" />
+    <Compile Include="Engine\Windows\ActiveXDebugging.cs" />
+    <Compile Include="Engine\Windows\ActiveXScripting.cs" />
+    <Compile Include="Engine\Windows\ActiveXWrappers.cs" />
+    <Compile Include="Engine\Windows\WindowsScriptEngine.cs" />
+    <Compile Include="Engine\Windows\WindowsScriptEngine.Debug.cs" />
+    <Compile Include="Engine\Windows\WindowsScriptEngine.Site.cs" />
+    <Compile Include="Engine\Windows\WindowsScriptEngineFlags.cs" />
+    <Compile Include="Engine\Windows\WindowsScriptItem.cs" />
+    <Compile Include="Engine\JScriptEngine.cs" />
+    <Compile Include="Language.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VBScriptEngine.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Furesoft.Web\Furesoft.Web.csproj">
+      <Project>{4C001EB8-72B1-4B67-BBC6-CD7785CB82A6}</Project>
+      <Name>Furesoft.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

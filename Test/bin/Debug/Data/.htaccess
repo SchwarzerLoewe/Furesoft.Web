@@ -1,0 +1,10 @@
+AuthName "testbereich"
+AuthType "Basic"
+AuthUserFile ".htpasswd"
+ErrorDocument 404 "\Errors\404.html"
+DirectoryIndex "index.html"
+#AddType CSharp .cse
+
+RewriteEngine On
+RewriteRule ^/(\w+)/*$ ./index.cs?$1
+RewriteRule ^/(\w+)/test/*$ ./test.cs

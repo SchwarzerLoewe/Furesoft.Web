@@ -1,0 +1,9 @@
+echo("im an interpreted output<br />");
+
+var b = _GET["blub"];
+
+if (isset(b)) {
+    echo(b);
+}
+
+echo(_GET);

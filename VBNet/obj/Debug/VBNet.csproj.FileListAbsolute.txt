@@ -1,0 +1,16 @@
+D:\Projects\Furesoft.Web\VBNet\bin\Debug\VBNet.dll
+D:\Projects\Furesoft.Web\VBNet\bin\Debug\VBNet.pdb
+D:\Projects\Furesoft.Web\VBNet\bin\Debug\Furesoft.Web.dll
+D:\Projects\Furesoft.Web\VBNet\bin\Debug\Furesoft.Web.pdb
+D:\Projects\Furesoft.Web\VBNet\obj\Debug\VBNet.dll
+D:\Projects\Furesoft.Web\VBNet\obj\Debug\VBNet.pdb
+D:\Projects\Furesoft.Web\VBNet\obj\Debug\VBNet.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\VBNet\obj\Debug\VBNet.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\VBNet\bin\Debug\VBNet.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\VBNet\bin\Debug\VBNet.pdb
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\VBNet\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\VBNet\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\VBNet\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\VBNet\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\VBNet\obj\Debug\VBNet.dll
+C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\VBNet\obj\Debug\VBNet.pdb
