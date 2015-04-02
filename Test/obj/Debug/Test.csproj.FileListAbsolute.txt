@@ -20,3 +20,14 @@ C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft\Furesoft.Web\Te
 C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft\Furesoft.Web\Test\bin\Debug\CSharp.pdb
 C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft\Furesoft.Web\Test\bin\Debug\Furesoft.Web.pdb
 C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft\Furesoft.Web\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\obj\Debug\Test.exe
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\obj\Debug\Test.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\bin\Debug\Test.exe
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\bin\Debug\Test.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\bin\Debug\CSharp.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\bin\Debug\CSharp.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache

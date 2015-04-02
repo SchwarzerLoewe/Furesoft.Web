@@ -282,7 +282,7 @@ namespace Furesoft.Web
                 {
                     HandleFile(f, uri, p, sw);
                 }
-                else if (!uri.IsFile && Directory.Exists(uri.AbsolutePath))
+                else if (!uri.IsFile && Directory.Exists(f.ToString()))
                 {
                     var index = "index.html";
 
@@ -294,7 +294,14 @@ namespace Furesoft.Web
                         }
                     }
 
-                    HandleFile(new FileInfo(f.ToString() + index), uri, p, sw);
+                    if (!File.Exists(f.ToString() + index))
+                    {
+                        new DirectoryListing(ac, p, f).Render(sw);
+                    }
+                    else
+                    {
+                        HandleFile(new FileInfo(f.ToString() + index), uri, p, sw);
+                    }
                 }
                 else
                 {

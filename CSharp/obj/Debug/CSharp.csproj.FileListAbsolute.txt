@@ -30,3 +30,12 @@ C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft\Furesoft.Web\CS
 C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft\Furesoft.Web\CSharp\obj\Debug\CSharp.csprojResolveAssemblyReference.cache
 C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft\Furesoft.Web\CSharp\obj\Debug\CSharp.dll
 C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft\Furesoft.Web\CSharp\obj\Debug\CSharp.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\CSharp\bin\Debug\CSharp.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\CSharp\bin\Debug\CSharp.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\CSharp\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\CSharp\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\CSharp\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\CSharp\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\CSharp\obj\Debug\CSharp.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\CSharp\obj\Debug\CSharp.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\CSharp\obj\Debug\CSharp.pdb

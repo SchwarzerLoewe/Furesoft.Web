@@ -30,3 +30,13 @@ C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft\Furesoft.Web\Fu
 C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft\Furesoft.Web\Furesoft.Web\obj\Debug\Furesoft.Web.pdb
 C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft\Furesoft.Web\Furesoft.Web\obj\Debug\Furesoft.Web.Properties.Resources.resources
 C:\Users\filmee24\Documents\Visual Studio 2013\Projects\Furesoft\Furesoft.Web\Furesoft.Web\obj\Debug\Furesoft.Web.csproj.GenerateResource.Cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\bin\Debug\Furesoft.Web.dll.config
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\obj\Debug\Furesoft.Web.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\obj\Debug\Furesoft.Web.Properties.Resources.resources
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\obj\Debug\Furesoft.Web.csproj.GenerateResource.Cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\obj\Debug\Furesoft.Web.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\obj\Debug\Furesoft.Web.pdb
