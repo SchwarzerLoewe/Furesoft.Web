@@ -66,6 +66,8 @@
     <Compile Include="AssemblyPageResolver.cs" />
     <Compile Include="Component.cs" />
     <Compile Include="DirectoryListing.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Internal\ErrorProvider.cs" />
     <Compile Include="Internal\Functions.cs" />
     <Compile Include="Internal\IniFile.cs" />
     <Compile Include="Internal\SizeFormatter.cs" />

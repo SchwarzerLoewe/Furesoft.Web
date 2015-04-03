@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Windows.Forms;
 using Furesoft.Web.Internal;
+using Furesoft.Web.Modules;
 using Furesoft.Web.Properties;
 
 namespace Furesoft.Web
@@ -29,11 +29,13 @@ namespace Furesoft.Web
         public void Render(StreamWriter sw)
         {
             if(!isListing()) {
-                //ToDo: send access forbidden error
-                sw.WriteLine("Access forbidden");
+                sw.WriteLine(ErrorProvider.GetHtml(403));
+                LoggerModule.Log(ErrorProvider.GetHtml(403).StripHtml());
 
                 return;
             }
+
+            LoggerModule.Log("Lisiting Directory");
 
             string content = Resources.Listing;
 

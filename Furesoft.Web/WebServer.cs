@@ -14,6 +14,7 @@ namespace Furesoft.Web
     {
         private HttpListener ws;
         private WebConfig _wc;
+        private Access ac;
 
         public WebConfig WebConfig
         {
@@ -26,13 +27,14 @@ namespace Furesoft.Web
         public WebServer(WebConfig wc)
         {
             ws = new HttpListener();
-
+            ac = new Access("");
             _wc = wc;
 
             ws.Prefixes.Add("http://" + wc.IPAddress + ":" + wc.Port + "/");
             ws.Prefixes.Add("http://localhost:" + wc.Port + "/");
 
             LoggerModule.Init();
+            ErrorProvider.Init(ac, _wc);
         }
 
         public static WebServer Open(string connectionstring)
@@ -40,23 +42,6 @@ namespace Furesoft.Web
             var uri = new Uri(connectionstring);
 
             return new WebServer(new WebConfig() { Port = uri.Port, IPAddress = uri.Host.ToString() });
-        }
-
-        public string GetError(int errorcode)
-        {
-            var tmp = _wc.ErrorPages[errorcode.ToString()];
-            var fi = new FileInfo(tmp.Replace("{data}", _wc.DataDir) + "\\");
-
-            if (fi.Exists)
-            {
-                var er = File.ReadAllText(tmp);
-
-                LoggerModule.Log(er);
-
-                return er;
-            }
-
-            return "";
         }
 
         private bool ContainsLang(FileInfo uri)
@@ -145,7 +130,6 @@ namespace Furesoft.Web
 
             var f = new FileInfo(_wc.DataDir + uri.AbsolutePath);
 
-            Access ac = new Access("");
             if (Access.HasAccess(f.DirectoryName))
             {
                 var htaccess = new Furesoft.Web.Internal.HtAccess.Parser();
@@ -230,8 +214,8 @@ namespace Furesoft.Web
 
             if (AccessModule.IsBlocked(p.Request.LocalEndPoint.Address.ToString()))
             {
-                sw.WriteLine(GetError(403));
-                LoggerModule.Log(GetError(403));
+                sw.WriteLine(ErrorProvider.GetHtml(403));
+                LoggerModule.Log(ErrorProvider.GetHtml(403));
 
                 return;
             }
@@ -265,7 +249,7 @@ namespace Furesoft.Web
 
                                         sw.WriteLine("<p>Access Denied</p>");
 
-                                        LoggerModule.Log(GetError(403));
+                                        LoggerModule.Log(ErrorProvider.GetHtml(403));
                                     }
                                 }
                             }
@@ -307,8 +291,8 @@ namespace Furesoft.Web
                 }
                 else
                 {
-                    sw.WriteLine(GetError(404));
-                    LoggerModule.Log(GetError(404));
+                    sw.WriteLine(ErrorProvider.GetHtml(404));
+                    LoggerModule.Log(ErrorProvider.GetHtml(404));
                 }
 
                 p.Response.OutputStream.Flush();
