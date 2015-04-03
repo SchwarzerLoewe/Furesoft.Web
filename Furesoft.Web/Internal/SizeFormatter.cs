@@ -9,7 +9,7 @@ namespace Furesoft.Web.Internal
     {
         public static string Format(double len, int decimals)
         {
-            string[] sizes = { "B", "KB", "MB", "GB" };
+            string[] sizes = { "B", "KB", "MB", "GB", "TB", "PB", "EB" };
             int order = 0;
             while (len >= 1024 && order + 1 < sizes.Length)
             {
