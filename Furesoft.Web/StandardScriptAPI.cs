@@ -28,6 +28,8 @@ namespace Furesoft.Web
             {
                 return Activator.CreateInstance(Type.GetType(o));
             }));
+            Functions.Add("base64_encode", new Func<byte[], string>(Converter.ToString));
+            Functions.Add("base64_decode", new Func<string, byte[]>(Converter.ToBytes));
 
             Variables.Add("OutputStream", sw);
             Variables.Add("_GET", Get.Create(uri));

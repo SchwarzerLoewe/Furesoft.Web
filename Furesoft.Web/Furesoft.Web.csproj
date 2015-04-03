@@ -141,7 +141,9 @@
     <Compile Include="RouteAttribute.cs" />
     <Compile Include="StandardScriptAPI.cs" />
     <Compile Include="ConverterExtensions.cs" />
+    <Compile Include="UI\DynamicImage.cs" />
     <Compile Include="UI\Img.cs" />
+    <Compile Include="UI\Container.cs" />
     <Compile Include="UI\Link.cs" />
     <Compile Include="UI\Button.cs" />
     <Compile Include="UI\Style.cs" />
