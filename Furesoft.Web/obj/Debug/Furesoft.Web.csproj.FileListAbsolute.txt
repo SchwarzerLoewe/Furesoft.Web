@@ -39,3 +39,4 @@ C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\obj\Debug\Furesoft.
 C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\obj\Debug\Furesoft.Web.csproj.GenerateResource.Cache
 C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\obj\Debug\Furesoft.Web.dll
 C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\obj\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Furesoft.Web\obj\Debug\Furesoft.Web.csprojResolveAssemblyReference.cache

@@ -16,7 +16,7 @@ namespace Test
             //wc.ScriptingLanguages.Add(new FSharp.Language());
 
             //wc.ScriptingLanguages.Add(new VBNet.Language());
-            //wc.ScriptingLanguages.Add(new JScriptNet.Language());
+            
 
             //wc.ScriptingLanguages.Add(new VBScript.Language());
             //wc.ScriptingLanguages.Add(new CPP.Language());
@@ -30,6 +30,7 @@ namespace Test
             var ws = WebServer.Open("server://127.0.0.1:8080/");
             ws.WebConfig.DataDir = Application.StartupPath + "\\Data\\";
             ws.WebConfig.ScriptingLanguages.Add(new CSharp.Language());
+            ws.WebConfig.ScriptingLanguages.Add(new JScriptNet.Language());
             ws.Start();
 
             Console.WriteLine("A test webserver.");

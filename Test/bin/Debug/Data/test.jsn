@@ -1,0 +1,20 @@
+﻿import System
+import System.Collections.Generic
+import System.Drawing;
+import System.Drawing.Imaging
+import Furesoft.Web
+import Furesoft.Web.UI
+
+public class Home extends Page {
+	
+	public override function OnLoad() {
+		var uri = new Uri("http://dotnet-snippets.de/images/user/nopic.png");
+		var buff = Converter.FromWeb(uri);
+
+        var img = new Img();
+        img.Src = Converter.ToWebString(buff, ImageFormat.Png);
+
+        Response.WriteLine(img);
+	}
+	
+}

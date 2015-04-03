@@ -1,0 +1,88 @@
+03.04.2015 22:35:40: request /index.cs
+03.04.2015 22:37:41: request /index.cs
+03.04.2015 22:39:13: request /js
+03.04.2015 22:39:13: Error 403
+03.04.2015 22:39:19: request /index.cs
+03.04.2015 22:39:20: 16: Der Typ- oder Namespacename 'Uri' konnte nicht gefunden werden. (Fehlt eine Using-Direktive oder ein Assemblyverweis?)
+03.04.2015 22:39:20: 18: 'Image' ist ein mehrdeutiger Verweis und kann 'Furesoft.Web.UI.Image' oder 'System.Drawing.Image' sein.
+03.04.2015 22:39:20: 19: Der Name 'ImageFormat' ist im aktuellen Kontext nicht vorhanden.
+03.04.2015 22:40:54: request /index.cs
+03.04.2015 22:40:54: 19: 'Image' ist ein mehrdeutiger Verweis und kann 'Furesoft.Web.UI.Image' oder 'System.Drawing.Image' sein.
+03.04.2015 22:40:54: 20: Der Name 'ImageFormat' ist im aktuellen Kontext nicht vorhanden.
+03.04.2015 22:42:16: request /js
+03.04.2015 22:42:16: Error 403
+03.04.2015 22:42:20: request /index.cs
+03.04.2015 22:42:20: 5: Der Typ- oder Namespacename 'ImageFormats' ist im Namespace 'System.Drawing' nicht vorhanden. (Fehlt ein Assemblyverweis?)
+03.04.2015 22:42:59: request /js
+03.04.2015 22:42:59: Error 403
+03.04.2015 22:43:02: request /index.cs
+03.04.2015 22:43:03: CSharp Script executed
+03.04.2015 22:50:42: request /index.cs
+03.04.2015 22:50:42: CSharp Script executed
+03.04.2015 22:54:46: request /index.cs
+03.04.2015 22:54:47: CSharp Script executed
+03.04.2015 22:54:49: request /index.cs
+03.04.2015 22:54:50: CSharp Script executed
+03.04.2015 22:59:54: request /index.cs
+03.04.2015 22:59:54: CSharp Script executed
+03.04.2015 23:09:09: request /index.cs
+03.04.2015 23:09:10: CSharp Script executed
+03.04.2015 23:09:14: request /test.jsn
+03.04.2015 23:10:26: request /test.jsn
+03.04.2015 23:10:27: 1: Ausdruck erwartet.
+03.04.2015 23:10:27: 6: Die Variable Page wurde nicht deklariert.
+03.04.2015 23:10:27: 9: Die Variable Link wurde nicht deklariert.
+03.04.2015 23:10:27: 16: Objekte des Typs System.Uri enthalten diesen Member nicht.
+03.04.2015 23:10:27: 18: Die Variable Img wurde nicht deklariert.
+03.04.2015 23:10:27: 19: Die Variable Converter wurde nicht deklariert.
+03.04.2015 23:10:27: 19: Die Variable ImageFormat wurde nicht deklariert.
+03.04.2015 23:10:27: 21: Die Variable Response wurde nicht deklariert.
+03.04.2015 23:10:27: 8: In einer Basisklasse gibt es keine übereinstimmende Methode, die überschrieben werden kann.
+03.04.2015 23:11:49: request /test.jsn
+03.04.2015 23:11:49: 1: Ausdruck erwartet.
+03.04.2015 23:11:49: 6: Die Variable Page wurde nicht deklariert.
+03.04.2015 23:11:49: 9: Die Variable Link wurde nicht deklariert.
+03.04.2015 23:11:49: 16: Objekte des Typs System.Uri enthalten diesen Member nicht.
+03.04.2015 23:11:49: 18: Die Variable Img wurde nicht deklariert.
+03.04.2015 23:11:49: 19: Die Variable Converter wurde nicht deklariert.
+03.04.2015 23:11:49: 19: Die Variable ImageFormat wurde nicht deklariert.
+03.04.2015 23:11:49: 21: Die Variable Response wurde nicht deklariert.
+03.04.2015 23:11:49: 8: In einer Basisklasse gibt es keine übereinstimmende Methode, die überschrieben werden kann.
+03.04.2015 23:13:16: request /test.jsn
+03.04.2015 23:13:17: 1: Ausdruck erwartet.
+03.04.2015 23:13:17: 6: Die Variable Page wurde nicht deklariert.
+03.04.2015 23:13:17: 8: In einer Basisklasse gibt es keine übereinstimmende Methode, die überschrieben werden kann.
+03.04.2015 23:14:34: request /test.jsn
+03.04.2015 23:14:34: 1: Ausdruck erwartet.
+03.04.2015 23:14:34: 8: Die Variable Page wurde nicht deklariert.
+03.04.2015 23:14:34: 10: In einer Basisklasse gibt es keine übereinstimmende Methode, die überschrieben werden kann.
+03.04.2015 23:15:04: request /test.jsn
+03.04.2015 23:15:04: 1: Ausdruck erwartet.
+03.04.2015 23:15:36: request /test.jsn
+03.04.2015 23:15:37: 1: Ausdruck erwartet.
+03.04.2015 23:16:40: request /test.jsn
+03.04.2015 23:16:41: 1: Ausdruck erwartet.
+03.04.2015 23:18:34: request /test.jsn
+03.04.2015 23:18:35: 1: Ungültiges Zeichen.
+03.04.2015 23:18:35: 1: Die Variable ï wurde nicht deklariert.
+03.04.2015 23:18:35: 1: Nur Typ- und Paketdefinitionen sind innerhalb einer Bibliothek zulässig.
+03.04.2015 23:18:54: request /test.jsn
+03.04.2015 23:18:55: 1: Ungültiges Zeichen.
+03.04.2015 23:21:05: request /test.jsn
+03.04.2015 23:21:05: 18: Objekte des Typs System.Uri enthalten diesen Member nicht.
+03.04.2015 23:21:05: 21: Die Variable ImageFormat wurde nicht deklariert.
+03.04.2015 23:22:04: request /test.jsn
+03.04.2015 23:22:05: 15: Die Variable ImageFormat wurde nicht deklariert.
+03.04.2015 23:22:47: request /test.jsn
+03.04.2015 23:22:48: JScriptNet Script executed
+03.04.2015 23:22:57: request /index.cs
+03.04.2015 23:22:57: 1: Ein Namespace kann nicht direkt Member, wie z.B. Felder oder Methoden, enthalten.
+03.04.2015 23:24:15: request /test.jsn
+03.04.2015 23:24:24: 1: Ungültiges Zeichen.
+03.04.2015 23:31:09: request /test.jsn
+03.04.2015 23:31:10: 1: Ungültiges Zeichen.
+03.04.2015 23:31:47: request /test.jsn
+03.04.2015 23:32:29: 1: Ungültiges Zeichen.
+03.04.2015 23:33:32: request /test.jsn
+03.04.2015 23:34:48: request /index.cs
+03.04.2015 23:34:49: CSharp Script executed

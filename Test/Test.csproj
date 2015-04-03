@@ -51,6 +51,7 @@
     <None Include="bin\Debug\Data\test.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="bin\Debug\Data\test.jsn" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSharp\CSharp.csproj">
@@ -60,6 +61,10 @@
     <ProjectReference Include="..\Furesoft.Web\Furesoft.Web.csproj">
       <Project>{4C001EB8-72B1-4B67-BBC6-CD7785CB82A6}</Project>
       <Name>Furesoft.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JScriptNet\JScriptNet.csproj">
+      <Project>{7c5a25d6-af44-484e-a4f2-9e56f0c76679}</Project>
+      <Name>JScriptNet</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

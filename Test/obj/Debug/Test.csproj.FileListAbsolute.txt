@@ -31,3 +31,5 @@ C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\bin\Debug\Mono.Security.dll
 C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\bin\Debug\CSharp.pdb
 C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\bin\Debug\Furesoft.Web.pdb
 C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\bin\Debug\JScriptNet.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Test\bin\Debug\JScriptNet.pdb

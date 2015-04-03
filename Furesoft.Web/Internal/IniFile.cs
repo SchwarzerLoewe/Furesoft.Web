@@ -94,7 +94,9 @@ namespace Furesoft.Web.Internal
 
         public Dictionary<string, string> GetSection(string name)
         {
-            return m_Sections[name];
+            if(m_Sections.ContainsKey(name))
+                return m_Sections[name];
+            return null;
         }
 
         // *** Read file contents into local cache ***

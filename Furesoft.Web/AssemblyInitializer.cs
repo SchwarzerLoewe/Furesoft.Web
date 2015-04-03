@@ -1,4 +1,5 @@
-﻿using System.CodeDom.Compiler;
+﻿using System;
+using System.CodeDom.Compiler;
 using System.IO;
 using System.Reflection;
 using Furesoft.Web.Internal;
@@ -15,11 +16,16 @@ namespace Furesoft.Web
             options.GenerateExecutable = false;
             options.GenerateInMemory = true;
 
-            options.ReferencedAssemblies.AddRange(new[] { "System.dll", "System.Core.dll", typeof(IScriptLanguage).Assembly.Location, typeof(Mono.Net.HttpListener).Assembly.Location });
+            options.ReferencedAssemblies.AddRange(new[] { "System.dll", "System.Core.dll", "System.Drawing.dll", typeof(IScriptLanguage).Assembly.Location, typeof(Mono.Net.HttpListener).Assembly.Location });
 
-            foreach (var refs in ini.GetSection("References"))
+            var sec = ini.GetSection("References");
+
+            if (sec != null)
             {
-                options.ReferencedAssemblies.Add(refs.Value);
+                foreach (var refs in sec)
+                {
+                    options.ReferencedAssemblies.Add(refs.Value);
+                }
             }
 
             var res = bcp.CompileAssemblyFromSource(options, src);
@@ -31,8 +37,12 @@ namespace Furesoft.Web
                     foreach (CompilerError item in res.Errors)
                     {
                         LoggerModule.Log(item.Line + ": " + item.ErrorText);
+
+                        throw new Exception(item.ErrorText);
                     }
                 }
+                
+                
             }
             else
             {

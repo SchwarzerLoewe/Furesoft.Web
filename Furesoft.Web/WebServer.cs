@@ -70,29 +70,34 @@ namespace Furesoft.Web
 
         private void HandleFile(FileInfo f, Uri uri, HttpListenerContext p, StreamWriter sw)
         {
-            var fs = File.ReadAllBytes(f.ToString());
-
-            p.Response.ContentType = Mime.GetMimeType(f.Extension);
-
-            if (!ContainsLang(f))
+            using (var reader = new System.IO.StreamReader(f.ToString(), true))
             {
-                if (Mime.GetMimeType(f.Extension).StartsWith("image"))
+                var fs = reader.BaseStream.ToArray();
+
+                p.Response.ContentType = Mime.GetMimeType(f.Extension);
+
+                if (!ContainsLang(f))
                 {
-                    p.Response.OutputStream.Write(fs, 0, fs.Length);
-                    p.Response.OutputStream.Flush();
+                    if (Mime.GetMimeType(f.Extension).StartsWith("image"))
+                    {
+                        p.Response.OutputStream.Write(fs, 0, fs.Length);
+                        p.Response.OutputStream.Flush();
+                    }
+                    else
+                    {
+                        sw.WriteLine(reader.CurrentEncoding.GetString(fs));
+                        sw.Flush();
+                    }
                 }
                 else
                 {
-                    sw.WriteLine(Encoding.UTF8.GetString(fs));
-                    sw.Flush();
-                }
-            }
-            else
-            {
-                var lng = GetLanguageByExtension(f);
-                lng.Execute(Encoding.ASCII.GetString(fs), uri, p, _wc, sw);
+                    var lng = GetLanguageByExtension(f);
+                    lng.Load();
 
-                LoggerModule.Log(lng.Name + " Script executed");
+                    lng.Execute(reader.CurrentEncoding.GetString(fs), uri, p, _wc, sw);
+
+                    LoggerModule.Log(lng.Name + " Script executed");
+                }
             }
         }
 
