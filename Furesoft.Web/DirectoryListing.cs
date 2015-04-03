@@ -4,6 +4,7 @@ using System.IO;
 using System.Text;
 using System.Windows.Forms;
 using Furesoft.Web.Internal;
+using Furesoft.Web.Properties;
 
 namespace Furesoft.Web
 {
@@ -20,11 +21,12 @@ namespace Furesoft.Web
             _fi = fi;
         }
 
-        string folderItem = "<tr><td valign='top'><img src='{{ListingPath}}/folder.gif' alt='[DIR]'></td><td><a href='{{Path}}/{{folder}}'>{{folder}}</a></td><td align='right'>{{Size}}  </td></tr>";
-        string fileItem = "<tr><td valign='top'><img src='{{ListingPath}}/unknown.gif' alt='[FILE]'></td><td><a href='{{Path}}/{{File}}'>{{File}}</a></td><td align='right'>{{Size}}  </td></tr>";
+        string folderItem = "<tr><td><a href='{{Path}}/{{folder}}'>{{folder}}</a></td><td align='right'>{{Size}}  </td></tr>";
+        string fileItem = "<tr><td><a href='{{Path}}/{{File}}'>{{File}}</a></td><td align='right'>{{Size}}  </td></tr>";
+        
         public void Render(StreamWriter sw)
         {
-            string content = File.ReadAllText(Application.StartupPath + "\\Data\\Listing\\index.htm");
+            string content = Resources.Listing;
 
             var dict = new Dictionary<string, object>();
             dict.Add("Folder", _p.Request.Url.LocalPath);
@@ -33,6 +35,7 @@ namespace Furesoft.Web
 
             content = Template.Render(content, dict);
             folderItem = Template.Render(folderItem, dict);
+            fileItem = Template.Render(fileItem, dict);
 
             var sb = new StringBuilder();
 
@@ -47,7 +50,7 @@ namespace Furesoft.Web
             {
                 var fi = new FileInfo(file);
 
-                sb.AppendLine(fileItem.Replace("{{File}}", fi.Name).Replace("{{Size}}", fi.Length.ToString()));
+                sb.AppendLine(fileItem.Replace("{{File}}", fi.Name).Replace("{{Size}}", SizeFormatter.Format(fi.Length, 2)));
             }
 
             content = content.Replace("{{Items}}", sb.ToString());

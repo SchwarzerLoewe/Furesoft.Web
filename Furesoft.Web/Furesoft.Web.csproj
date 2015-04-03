@@ -68,6 +68,7 @@
     <Compile Include="DirectoryListing.cs" />
     <Compile Include="Internal\Functions.cs" />
     <Compile Include="Internal\IniFile.cs" />
+    <Compile Include="Internal\SizeFormatter.cs" />
     <Compile Include="Internal\Template.cs" />
     <Compile Include="ModuleSystem\IModule.cs" />
     <Compile Include="ModuleSystem\Module.cs" />
@@ -156,6 +157,7 @@
   <ItemGroup>
     <Content Include="References\Mono.Net.HttpListener.dll" />
     <Content Include="References\Mono.Security.dll" />
+    <None Include="Resources\Listing.htm" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

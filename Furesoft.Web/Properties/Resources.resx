@@ -132,6 +132,10 @@
   <data name="KeyNotFound" xml:space="preserve">
     <value>The key {0} could not be found.</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Listing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Listing.htm;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
   <data name="MissingClosingTag" xml:space="preserve">
     <value>Expected a matching {0} tag but none was found.</value>
   </data>

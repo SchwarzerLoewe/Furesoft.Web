@@ -273,8 +273,10 @@ namespace Furesoft.Web
                         catch
                         {
                         }
-
-                        return AuthenticationSchemes.Basic;
+                        if (ac.AuthType == "Basic")
+                            return AuthenticationSchemes.Basic;
+                        else
+                            return AuthenticationSchemes.None;
                     };
                 }
 
