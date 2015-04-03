@@ -24,3 +24,17 @@ C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Scheme\bin\Debug\Mono.Security.
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Scheme\bin\Debug\Furesoft.Web.pdb
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Scheme\obj\Debug\Scheme.dll
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Scheme\obj\Debug\Scheme.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\obj\Debug\Scheme.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\obj\Debug\Scheme.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\obj\Debug\Scheme.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\bin\Debug\Scheme.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\bin\Debug\Scheme.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\bin\Debug\IronScheme.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\bin\Debug\IronScheme.Remoting.Client.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\bin\Debug\IronScheme.Remoting.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\bin\Debug\IronScheme.Remoting.Server.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\bin\Debug\IronScheme.Web.Runtime.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Scheme\bin\Debug\Furesoft.Web.pdb

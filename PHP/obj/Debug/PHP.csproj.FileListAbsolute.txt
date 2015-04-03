@@ -19,3 +19,12 @@ C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\PHP\bin\Debug\Mono.Security.dll
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\PHP\bin\Debug\Furesoft.Web.pdb
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\PHP\obj\Debug\PHP.dll
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\PHP\obj\Debug\PHP.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\PHP\bin\Debug\PHP.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\PHP\bin\Debug\PHP.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\PHP\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\PHP\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\PHP\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\PHP\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\PHP\obj\Debug\PHP.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\PHP\obj\Debug\PHP.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\PHP\obj\Debug\PHP.pdb

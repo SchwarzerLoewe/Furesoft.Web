@@ -7,26 +7,10 @@ namespace JS
 {
     public class Language : IScriptLanguage
     {
-        public override string Name
-        {
-            get
-            {
-                return "JS";
-            }
-        }
-
-        public override string Extension
-        {
-            get
-            {
-                return ".jsa";
-            }
-        }
-
-        public override void Execute(string src, HttpListenerContext p, WebConfig wc, StreamWriter sw)
+        public override void Execute(string src, Uri uri, HttpListenerContext p, WebConfig wc, StreamWriter sw)
         {
             JS.JScriptEngine engine = new JScriptEngine();
-            var sapi = new StandardScriptApi(p, sw);
+            var sapi = new StandardScriptApi(uri, p, sw);
 
             engine.Add("require", new Action<string>(pa => engine.Execute(File.ReadAllText(pa))));
             engine.Add("eval", new Func<string, object>(pa => engine.Evaluate(pa)));
@@ -46,5 +30,22 @@ namespace JS
 
             engine.Execute(src);
         }
+
+        public override string Name
+        {
+            get
+            {
+                return "JS";
+            }
+        }
+
+        public override string Extension
+        {
+            get
+            {
+                return ".jsa";
+            }
+        }
+
     }
 }

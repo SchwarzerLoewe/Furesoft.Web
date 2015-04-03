@@ -19,3 +19,12 @@ C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\VBScript\bin\Debug\Furesoft.Web
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\VBScript\obj\Debug\VBScript.dll
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\VBScript\obj\Debug\VBScript.pdb
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\VBScript\obj\Debug\VBScript.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\VBScript\obj\Debug\VBScript.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\VBScript\obj\Debug\VBScript.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\VBScript\obj\Debug\VBScript.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\VBScript\bin\Debug\VBScript.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\VBScript\bin\Debug\VBScript.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\VBScript\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\VBScript\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\VBScript\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\VBScript\bin\Debug\Furesoft.Web.pdb

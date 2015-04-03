@@ -7,6 +7,11 @@ namespace Nemerle
 {
     public class Language : IScriptLanguage
     {
+        public override void Execute(string src, Uri uri, HttpListenerContext p, WebConfig wc, StreamWriter sw)
+        {
+            
+        }
+
         public override string Name
         {
             get
@@ -23,9 +28,5 @@ namespace Nemerle
             }
         }
 
-        public override void Execute(string src, HttpListenerContext p, WebConfig wc, StreamWriter sw)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

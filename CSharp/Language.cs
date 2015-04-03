@@ -15,7 +15,7 @@ namespace CSharp
         public override void Execute(string src, Uri uri, HttpListenerContext p, WebConfig wc, StreamWriter sw)
         {
             var bcp = new CSharpCodeProvider();
-            var ass = AssemblyInitializer.Init(bcp, src, sw);
+            var ass = AssemblyInitializer.Init(bcp, src, sw, ini);
 
             var page = AssemblyPageResolver.Resolve(ass);
 
@@ -52,7 +52,7 @@ namespace CSharp
             var bcp = new CSharpCodeProvider();
             var options = new CompilerParameters();
 
-            var ass = AssemblyInitializer.Init(bcp, src, new StreamWriter(p.Response.OutputStream));
+            var ass = AssemblyInitializer.Init(bcp, src, new StreamWriter(p.Response.OutputStream), ini);
 
             foreach (var a in ass.GetTypes())
             {

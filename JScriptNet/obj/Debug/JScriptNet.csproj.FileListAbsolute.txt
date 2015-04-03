@@ -19,3 +19,12 @@ C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\JScriptNet\bin\Debug\Mono.Secur
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\JScriptNet\bin\Debug\Furesoft.Web.pdb
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\JScriptNet\obj\Debug\JScriptNet.dll
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\JScriptNet\obj\Debug\JScriptNet.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\JScriptNet\bin\Debug\JScriptNet.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\JScriptNet\bin\Debug\JScriptNet.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\JScriptNet\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\JScriptNet\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\JScriptNet\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\JScriptNet\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\JScriptNet\obj\Debug\JScriptNet.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\JScriptNet\obj\Debug\JScriptNet.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\JScriptNet\obj\Debug\JScriptNet.pdb

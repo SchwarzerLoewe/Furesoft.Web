@@ -1,13 +1,14 @@
 ﻿using System.CodeDom.Compiler;
 using System.IO;
 using System.Reflection;
+using Furesoft.Web.Internal;
 using Furesoft.Web.Modules;
 
 namespace Furesoft.Web
 {
     public class AssemblyInitializer
     {
-        public static Assembly Init(CodeDomProvider bcp, string src, StreamWriter sw)
+        public static Assembly Init(CodeDomProvider bcp, string src, StreamWriter sw, IniFile ini)
         {
             var options = new CompilerParameters();
 
@@ -15,6 +16,11 @@ namespace Furesoft.Web
             options.GenerateInMemory = true;
 
             options.ReferencedAssemblies.AddRange(new[] { "System.dll", "System.Core.dll", typeof(IScriptLanguage).Assembly.Location, typeof(Mono.Net.HttpListener).Assembly.Location });
+
+            foreach (var refs in ini.GetSection("References"))
+            {
+                options.ReferencedAssemblies.Add(refs.Value);
+            }
 
             var res = bcp.CompileAssemblyFromSource(options, src);
 

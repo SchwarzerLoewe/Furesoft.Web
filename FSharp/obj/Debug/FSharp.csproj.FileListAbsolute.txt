@@ -21,3 +21,13 @@ C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\FSharp\bin\Debug\Furesoft.Web.p
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\FSharp\obj\Debug\FSharp.csprojResolveAssemblyReference.cache
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\FSharp\obj\Debug\FSharp.dll
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\FSharp\obj\Debug\FSharp.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\FSharp\bin\Debug\FSharp.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\FSharp\bin\Debug\FSharp.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\FSharp\bin\Debug\FSharp.Compiler.CodeDom.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\FSharp\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\FSharp\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\FSharp\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\FSharp\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\FSharp\obj\Debug\FSharp.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\FSharp\obj\Debug\FSharp.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\FSharp\obj\Debug\FSharp.pdb

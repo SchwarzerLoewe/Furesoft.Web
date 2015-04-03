@@ -89,6 +89,12 @@ namespace Furesoft.Web.Internal
 
             Value = (j > 0) ? (Line.Substring(i + 1, j).Trim()) : ("");
             return true;
+        
+        }
+
+        public Dictionary<string, string> GetSection(string name)
+        {
+            return m_Sections[name];
         }
 
         // *** Read file contents into local cache ***

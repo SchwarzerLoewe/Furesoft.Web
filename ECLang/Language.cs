@@ -1,4 +1,5 @@
-﻿using Furesoft.Web;
+﻿using System;
+using Furesoft.Web;
 using Mono.Net;
 using System.IO;
 
@@ -6,26 +7,10 @@ namespace ECLang
 {
     public class Language : IScriptLanguage
     {
-        public override string Name
-        {
-            get
-            {
-                return "ECLang";
-            }
-        }
-
-        public override string Extension
-        {
-            get
-            {
-                return ".ec";
-            }
-        }
-
-        public override void Execute(string src, HttpListenerContext p, WebConfig wc, StreamWriter sw)
+        public override void Execute(string src, Uri uri, HttpListenerContext p, WebConfig wc, StreamWriter sw)
         {
             var en = new ECLang.Engine();
-            var sapi = new StandardScriptApi(p, sw);
+            var sapi = new StandardScriptApi(uri, p, sw);
 
             foreach (var item in sapi.Functions)
             {
@@ -42,5 +27,22 @@ namespace ECLang
 
             en.Execute(src);
         }
+
+        public override string Name
+        {
+            get
+            {
+                return "ECLang";
+            }
+        }
+
+        public override string Extension
+        {
+            get
+            {
+                return ".ec";
+            }
+        }
+
     }
 }

@@ -68,31 +68,26 @@
       <summary>
         <para>default null value for [in_namespace] means that keyword
  will be disabled in all namespaces
-
 </para>
       </summary> <remarks><para>Note: only keywords introduced by syntax extensions can be disabled
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.CompilationOptions.IsKeywordDisabled(System.String,Nemerle.Core.list{Nemerle.Compiler.NamespaceTree.Node})" />
     <member name="M:Nemerle.Compiler.CompilationOptions.DefineConstant(System.String)">
       <summary>
         <para>Adds given name as a command-line defined constant.
  It is then visible in all files just like defined preprocessor constant.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.CompilationOptions.UndefineConstant(System.String)">
       <summary>
         <para>Removes given name as a command-line defined constant.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.CompilationOptions.IsConstantDefined(System.String)">
       <summary>
         <para>Checks if given name was specified as command-line defined constant.
-
 </para>
       </summary>
     </member>
@@ -102,7 +97,6 @@
     <member name="T:Nemerle.Compiler.WarningOptions">
       <summary>
         <para>Module used to enumerate and filter warnings emitted by compiler
-
 </para>
       </summary>
     </member>
@@ -120,11 +114,9 @@
       <summary>
         <para>Gives information if warning with given number should be emited by
         compiler.
-
 </para>
       </summary>        <remarks><para>It depends on currently set warning level and enabled / disabled
         particular warnings.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.WarningOptions.IsEnabledAt(Nemerle.Compiler.Location,System.Int32)">
       <summary>
@@ -145,7 +137,6 @@
     <member name="T:Nemerle.Compiler.MatchCompilerOptions">
       <summary>
         <para>Match compiler options
-
 </para>
       </summary>
     </member>
@@ -310,7 +301,6 @@
       <summary>
         <para>Clearing all variables used in typing process.
  Use this method only if we destroy NamespaceTree
-
 </para>
       </summary>
     </member>
@@ -322,7 +312,6 @@
     <member name="M:Nemerle.Compiler.ManagerClass.#ctor(Nemerle.Compiler.CompilationOptions)">
       <summary>
         <para>initialize pipelines with default values
-
 </para>
       </summary>
     </member>
@@ -336,12 +325,10 @@
       <summary>
         <para>Pipeline for adding namespaces and types hierarchy from parsed
         declarations.
-
 </para>
       </summary>        <remarks><para>The list of declarations denotes the scope of one file, including
         using statements, etc. So the default pipeline passes enriched
         environment through declarations on the list.
-
 </para></remarks></member>
     <member name="F:Nemerle.Compiler.ManagerClass.Parser" />
     <member name="F:Nemerle.Compiler.ManagerClass._N__N_event_field_of_OnInit_3303" />
@@ -355,7 +342,6 @@
       <summary>
         <para>True if compiler runing in IntelliSense mode. This disable some
  optimisations and anable lazy methods bodies compilation.
-
 </para>
       </summary>
     </member>
@@ -363,7 +349,6 @@
       <summary>
         <para>True if now completion word in progress. This enable additional checks
  of completion tokens.
-
 </para>
       </summary>
     </member>
@@ -392,7 +377,6 @@
     <member name="M:Nemerle.Compiler.ManagerClass.Run">
       <summary>
         <para>Run passes of the compiler.
-
 </para>
       </summary>
     </member>
@@ -404,21 +388,18 @@
     <member name="M:Nemerle.Compiler.ManagerClass.IsExtensionMethod(Nemerle.Compiler.IMethod,Nemerle.Compiler.TypeVar)">
       <summary>
         <para>Return true if 'method' is extension method.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.ManagerClass.Complete(Nemerle.Compiler.Parsetree.PExpr,Nemerle.Compiler.TypeVar,Nemerle.Compiler.Typer,Nemerle.Compiler.GlobalEnv)">
       <summary>
         <para>Process completion.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.ManagerClass.CompletePattern(Nemerle.Compiler.Parsetree.PExpr,Nemerle.Compiler.TypeVar,Nemerle.Compiler.Typer.PatternTyper,Nemerle.Compiler.GlobalEnv)">
       <summary>
         <para>Process completion in patterns.
-
 </para>
       </summary>
     </member>
@@ -426,7 +407,6 @@
     <member name="M:Nemerle.Compiler.ManagerClass.CompleteTypeRef(Nemerle.Compiler.Parsetree.PExpr,Nemerle.Compiler.TypeBuilder,Nemerle.Compiler.GlobalEnv)">
       <summary>
         <para>Process completion in type reference.
-
 </para>
       </summary>
     </member>
@@ -442,7 +422,6 @@
       <summary>
         <para>True if compiler runing in IntelliSense mode. This disable some
  optimisations and anable lazy methods bodies compilation.
-
 </para>
       </summary>
     </member>
@@ -451,7 +430,6 @@
       <summary>
         <para>True if now completion word in progress. This enable additional checks
  of completion tokens.
-
 </para>
       </summary>
     </member>
@@ -496,7 +474,6 @@
     <member name="M:Nemerle.Compiler.Location.op_Addition(Nemerle.Compiler.Location,Nemerle.Compiler.Location)">
       <summary>
         <para>This operator is not commutative!
-
 </para>
       </summary>
     </member>
@@ -520,7 +497,6 @@
       <summary>
         <para>Adds new filename to locations index. If filename in already in
         store, an error message is outputted.
-
 </para>
       </summary>
     </member>
@@ -535,7 +511,6 @@
       <summary>
         <para>Gets index of given filename in locations store. If one doesn't exist
         it is being added and new index is returned.
-
 </para>
       </summary>
     </member>
@@ -573,14 +548,12 @@
     <member name="M:Nemerle.Compiler.Location.StrictlyContains(Nemerle.Compiler.Location)">
       <summary>
         <para>Returns whether the first location is strictly inside the second
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.Location.Contains(Nemerle.Compiler.Location)">
       <summary>
         <para>Returns whether the first location is (not strictly) inside the second
-
 </para>
       </summary>
     </member>
@@ -588,7 +561,6 @@
       <summary>
         <para>Returns whether the first location is (not strictly)
  before the second (the left of first is to the left of second)
-
 </para>
       </summary>
     </member>
@@ -596,7 +568,6 @@
     <member name="M:Nemerle.Compiler.Location.EnclosingLocation(Nemerle.Core.list{Nemerle.Compiler.Location})">
       <summary>
         <para>The 'lst' must be ordered. This function test only first and last elements.
-
 </para>
       </summary>
     </member>
@@ -615,7 +586,6 @@
     <member name="M:Nemerle.Compiler.Location.IsNestedIn(Nemerle.Compiler.Location)">
       <summary>
         <para>True if second contain inside this location and them not equal.
-
 </para>
       </summary>
     </member>
@@ -623,7 +593,6 @@
     <member name="M:Nemerle.Compiler.Location.IndexOfMostNested``1(System.Collections.Generic.IList{``0},Nemerle.Builtins.Function{``0,Nemerle.Compiler.Location},System.Int32,System.Int32)">
       <summary>
         <para>Return index of object in seq which conain most nested Lication.
-
 </para>
       </summary>
     </member>
@@ -645,7 +614,6 @@
     <member name="T:Nemerle.Compiler.ParsedBase">
       <summary>
         <para>Root of parsed AST
-
 </para>
       </summary>
     </member>
@@ -658,7 +626,6 @@
     <member name="M:Nemerle.Compiler.ParsedBase.#ctor">
       <summary>
         <para>Root of parsed AST
-
 </para>
       </summary>
     </member>
@@ -666,7 +633,6 @@
     <member name="T:Nemerle.Compiler.TypedBase">
       <summary>
         <para>Root of parsed AST
-
 </para>
       </summary>
     </member>
@@ -679,7 +645,6 @@
     <member name="M:Nemerle.Compiler.TypedBase.#ctor">
       <summary>
         <para>Root of parsed AST
-
 </para>
       </summary>
     </member>
@@ -708,7 +673,6 @@
     <member name="F:Nemerle.Compiler.NemerleModifiers.CompilerMutable">
       <summary>
         <para>field is immutable, but compiler overrides it and can assign something
-
 </para>
       </summary>
     </member>
@@ -736,14 +700,12 @@
     <member name="P:Nemerle.Compiler.AttributesAndModifiers.ParsedCustomAttributes">
       <summary>
         <para>This property contains only custom attributes which parsed from sources. Macros can't modify it.
-
 </para>
       </summary>
     </member>
     <member name="F:Nemerle.Compiler.AttributesAndModifiers._N_ParsedModifiers_6072">
       <summary>
         <para>This property contains only modifiers which parsed from sources. Macros can't modify it.
-
 </para>
       </summary>
     </member>
@@ -751,7 +713,6 @@
     <member name="P:Nemerle.Compiler.AttributesAndModifiers.ParsedModifiers">
       <summary>
         <para>This property contains only modifiers which parsed from sources. Macros can't modify it.
-
 </para>
       </summary>
     </member>
@@ -762,7 +723,6 @@
     <member name="M:Nemerle.Compiler.AttributesAndModifiers.#ctor(Nemerle.Compiler.AttributesAndModifiers)">
       <summary>
         <para>For Clone()
-
 </para>
       </summary>
     </member>
@@ -779,21 +739,18 @@
     <member name="M:Nemerle.Compiler.AttributesAndModifiers.FindAttribute(Nemerle.Compiler.TypeInfo,Nemerle.Compiler.GlobalEnv)">
       <summary>
         <para>Finds first attribute of specified type
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.AttributesAndModifiers.FindAttributeWithArgs(Nemerle.Compiler.TypeInfo,Nemerle.Compiler.GlobalEnv)">
       <summary>
         <para>Finds attribute of specified type
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.AttributesAndModifiers.FindAttributesWithArgs(Nemerle.Compiler.TypeInfo,Nemerle.Compiler.GlobalEnv)">
       <summary>
         <para>Finds all attributes of specified type
-
 </para>
       </summary>
     </member>
@@ -812,7 +769,6 @@
     <member name="M:Nemerle.Compiler.Literal.ToString">
       <summary>
         <para>Converts 'this' literal to an equivalent (lexable) string
-
 </para>
       </summary>
     </member>
@@ -827,7 +783,6 @@
     <member name="P:Nemerle.Compiler.Literal.AsRawInt">
       <summary>
         <para>Returns plain integer value of Literal.Integer or Literal.Enum.
-
 </para>
       </summary>
     </member>
@@ -954,7 +909,6 @@
     <member name="M:Nemerle.Compiler.LexerBase._N_special_33676(System.Char)">
       <summary>
         <para>we should have integer number here
-
 </para>
       </summary>
     </member>
@@ -1022,7 +976,6 @@
         (there already was processed block, or parent block isn't processed)
        3 else
        4 region
-
 </para>
       </summary>
     </member>
@@ -1044,7 +997,6 @@
       <summary>
         <para>returns true if there is some character in the input pending
  or false if we are at the end of file
-
 </para>
       </summary>
     </member>
@@ -1067,7 +1019,6 @@
     <member name="M:Nemerle.Compiler.LexerBase.get_recursive_string">
       <summary>
         <para>Read &lt;# .... &lt;# ... #&gt; ... #&gt; string
-
 </para>
       </summary>
     </member>
@@ -1136,20 +1087,17 @@
     <member name="T:Nemerle.Compiler.GrammarElement">
       <summary>
         <para>Nodes representing a tree of syntax extension definition.
-
 </para>
       </summary>      <remarks><para>Macros contain list of elements of grammar to describe syntax extensions,
       which they introduce.
       Later, parser is reading those lists and merge them into current
       tree of syntax extensions, which can have branches and contain macro call
       definitions in leaves.
-
 </para></remarks></member>
     <member name="F:Nemerle.Compiler.GrammarElement.Next">
       <summary>
         <para>Next element in grammar tree. It is used only in merged
  trees created by parser
-
 </para>
       </summary>
     </member>
@@ -1166,14 +1114,12 @@
     <member name="M:Nemerle.Compiler.GrammarElement._N_GetVariantCode">
       <summary>
         <para>Nodes representing a tree of syntax extension definition.
-
 </para>
       </summary>      <remarks><para>Macros contain list of elements of grammar to describe syntax extensions,
       which they introduce.
       Later, parser is reading those lists and merge them into current
       tree of syntax extensions, which can have branches and contain macro call
       definitions in leaves.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.GrammarElement._N_GetVariantCodeSafe(Nemerle.Compiler.GrammarElement)" />
     <member name="M:Nemerle.Compiler.GrammarElement._N_GetVariantCodeObject(System.Object)" />
@@ -1190,7 +1136,6 @@
     <member name="T:Nemerle.Compiler.SyntaxDefinition">
       <summary>
         <para>Definition of syntax extension, which given macro introduces.
-
 </para>
       </summary>
     </member>
@@ -1202,7 +1147,6 @@
     <member name="M:Nemerle.Compiler.SyntaxDefinition.#ctor(System.String,Nemerle.Core.list{System.String},Nemerle.Compiler.NamespaceTree.Node,Nemerle.Compiler.GrammarElement,Nemerle.Builtins.Function{Nemerle.Core.list{Nemerle.Compiler.Parsetree.SyntaxElement},Nemerle.Core.list{Nemerle.Compiler.Parsetree.SyntaxElement}})">
       <summary>
         <para>Definition of syntax extension, which given macro introduces.
-
 </para>
       </summary>
     </member>
@@ -1236,7 +1180,6 @@
       <summary>
         <para>This functions loads given syntax extensions into current syntax
         tree. Overlaping definitions are merged if possible.
-
 </para>
       </summary>
     </member>
@@ -1247,10 +1190,8 @@
     <member name="M:Nemerle.Compiler.MainParser.create_optional_holders(Nemerle.Compiler.GrammarElement,Nemerle.Core.list{Nemerle.Compiler.Parsetree.SyntaxElement})">
       <summary>
         <para>add empty syntax elements, which were ommited in this grammar branch
-
 </para>
       </summary> <remarks><para>this function should probably be extended ;-)
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.MainParser.parse_grammar_rule(Nemerle.Compiler.GrammarElement,Nemerle.Compiler.TokenStoppers,System.AttributeTargets)" />
     <member name="F:Nemerle.Compiler.MainParser.env" />
@@ -1262,17 +1203,14 @@
       <summary>
         <para>Creates the instance of parsing engine with given environment
         (set of imported namespaces and entered ones)
-
 </para>
       </summary>        <remarks><para>Parser instance is created with syntax extensions from Nemerle.Core namespace
         (which is always open by default).
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.MainParser.ParseExpr(Nemerle.Compiler.GlobalEnv,System.String,System.Boolean)">
       <summary>
         <para>Parse given string as expression, given context in which this
         expression is situated.
-
 </para>
       </summary>
     </member>
@@ -1282,7 +1220,6 @@
       <summary>
         <para>Parse expression given lexer producing its content and context in which this
         expression is situated.
-
 </para>
       </summary>
     </member>
@@ -1294,7 +1231,6 @@
       <summary>
         <para>Parse function body expression given lexer producing its content
  and context in which this expression is situated.
-
 </para>
       </summary>
     </member>
@@ -1306,7 +1242,6 @@
       <summary>
         <para>Parse well formed source code of toplevel program, using the given instance
  of [LexerBase] for obtaining tokens.
-
 </para>
       </summary>
     </member>
@@ -1315,7 +1250,6 @@
         <para>Parse well formed source code of toplevel program, using the given instance
  of [LexerBase] for obtaining tokens and invoke tokenHandler parameter function
  on the top-level token of given source.
-
 </para>
       </summary>
     </member>
@@ -1357,7 +1291,6 @@
       <summary>
         <para>This function parses top level group updating global environment
         when entering into new namespace, using directive, class, etc.
-
 </para>
       </summary>
     </member>
@@ -1366,7 +1299,6 @@
       <summary>
         <para>Parses toplevel type (like class, interface, etc.).
         Expects [toks] to be first token in type declaration.
-
 </para>
       </summary>
     </member>
@@ -1374,7 +1306,6 @@
       <summary>
         <para>Parses toplevel type (like class, interface, etc.).
         We are inside stream with modifiers and custom attributes already read.
-
 </para>
       </summary>
     </member>
@@ -1391,14 +1322,12 @@
     <member name="M:Nemerle.Compiler.MainParser.ParseFunctionOrExpression(Nemerle.Core.list{Nemerle.Compiler.Parsetree.PParameter})">
       <summary>
         <para>Parses function or single expression as function
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.MainParser.ParseBlockOrExpression(Nemerle.Core.list{Nemerle.Compiler.Parsetree.PParameter})">
       <summary>
         <para>Parses block or single expression
-
 </para>
       </summary>
     </member>
@@ -1410,7 +1339,6 @@
       <summary>
         <para>Adds string prefix to splice.
       It is used to generate event field name and accessor method names.
-
 </para>
       </summary>
     </member>
@@ -1422,7 +1350,6 @@
           remove { }
           potentially many field definitions
         }
-
 </para>
       </summary>
     </member>
@@ -1445,7 +1372,6 @@
           event property: event, property (what is this?)
           event add: method, param
           event remove: method, param
-
 </para>
       </summary>
     </member>
@@ -1456,7 +1382,6 @@
         <para>`splicing_type' is for noting, that there are spliced tyvars
  if yes, it's PType.Spliced with expression describing their list
  else it's PType.Void ()
-
 </para>
       </summary>
     </member>
@@ -1464,7 +1389,6 @@
       <summary>
         <para>Parse plain functional header (with optional '[..]' generic parameters
                                  and '(..)' fun parameters)
-
 </para>
       </summary>
     </member>
@@ -1478,7 +1402,6 @@
     <member name="M:Nemerle.Compiler.MainParser.parse_parameters(System.Boolean,System.Boolean)">
       <summary>
         <para>parameters of (a:foo,b,c) or [a,b:foo,c] kind
-
 </para>
       </summary>
     </member>
@@ -1487,7 +1410,6 @@
     <member name="M:Nemerle.Compiler.MainParser.parse_block(Nemerle.Core.list{Nemerle.Compiler.Parsetree.PParameter})">
       <summary>
         <para>parse {...} or $body - usually it is a body of method
-
 </para>
       </summary>
     </member>
@@ -1502,11 +1424,9 @@
       <summary>
         <para>Parse expression from current stream of tokens.
         Reading is terminated before every token from [stop].
-
 </para>
       </summary>        <remarks><para>This is the top expression parsing method, it uses infix to RPN method
         to parse operators and [parse_embedded_expr] to parse expression in between.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.MainParser.is_operator_or_stoper(Nemerle.Compiler.Token,Nemerle.Compiler.TokenStoppers)" />
     <member name="M:Nemerle.Compiler.MainParser.parse_literal" />
@@ -1522,48 +1442,39 @@
         <para>special function to parse sequence in a way allowing other functions
         switching to sibling LooseGroup of tokens. Like:
           LooseGroup (..a b c..); LooseGroup (d..)
-
 </para>
       </summary>        <remarks><para>It assumes that the token in current [stream] is a LooseGroup, and
         reads this and all following LooseGroups as expressions.
-
 </para></remarks></member>
     <member name="F:Nemerle.Compiler.MainParser.Manager">
       <summary>
         <para>Parser class, which transforms preparsed token tree into Nemerle parse trees.
-
 </para>
       </summary>      <remarks><para>It also contains some helper methods to perform operation needed to parse
       string as expression or entire file given [LexerBase] instance.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.MainParser.get_InternalType" />
     <member name="P:Nemerle.Compiler.MainParser.InternalType" />
     <member name="M:Nemerle.Compiler.MainParser.get_SystemTypeCache">
       <summary>
         <para>Parser class, which transforms preparsed token tree into Nemerle parse trees.
-
 </para>
       </summary>      <remarks><para>It also contains some helper methods to perform operation needed to parse
       string as expression or entire file given [LexerBase] instance.
-
 </para></remarks></member>
     <member name="P:Nemerle.Compiler.MainParser.SystemTypeCache" />
     <member name="M:Nemerle.Compiler.MainParser.__fake">
       <summary>
         <para>Parser class, which transforms preparsed token tree into Nemerle parse trees.
-
 </para>
       </summary>      <remarks><para>It also contains some helper methods to perform operation needed to parse
       string as expression or entire file given [LexerBase] instance.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.MainParser.RelocateImplInternal(Nemerle.Compiler.RelocationInfo)" />
     <member name="T:Nemerle.Compiler.MainParser.OperatorInfo">
       <summary>
         <para>Reverse Polish Notation token. It is used on the stack created during translation
  of infix operator expression into RPN on the way to create appropriate PExpr.
-
 </para>
       </summary>
     </member>
@@ -1651,7 +1562,6 @@
         <para>If this TopDeclaration nested in other TopDeclaration
  this property contain referens to it.  This property set to null
  if it is top level declaration.
-
 </para>
       </summary>
     </member>
@@ -1659,7 +1569,6 @@
     <member name="F:Nemerle.Compiler.Parsetree.TopDeclaration._headerLocation">
       <summary>
         <para>This location used to outlining tegion as start of outpining
-
 </para>
       </summary>
     </member>
@@ -1680,7 +1589,6 @@
         <para>If this TopDeclaration nested in other TopDeclaration
  this property contain referens to it.  This property set to null
  if it is top level declaration.
-
 </para>
       </summary>
     </member>
@@ -1690,7 +1598,6 @@
     <member name="M:Nemerle.Compiler.Parsetree.TopDeclaration.get_HeaderLocation">
       <summary>
         <para>This location used to outlining tegion as start of outpining
-
 </para>
       </summary>
     </member>
@@ -1719,7 +1626,6 @@
     <member name="F:Nemerle.Compiler.Parsetree.ClassMember._definedIn">
       <summary>
         <para>This property contain referens to TopDeclaration where defined this member.
-
 </para>
       </summary>
     </member>
@@ -1744,7 +1650,6 @@
     <member name="M:Nemerle.Compiler.Parsetree.ClassMember.get_DefinedIn">
       <summary>
         <para>This property contain referens to TopDeclaration where defined this member.
-
 </para>
       </summary>
     </member>
@@ -1862,7 +1767,6 @@
       <summary>
         <para>class encapsulating name of variable for purpose of
       quotation and renaming
-
 </para>
       </summary>
     </member>
@@ -1886,7 +1790,6 @@
     <member name="P:Nemerle.Compiler.Parsetree.Name.Id">
       <summary>
         <para>Returns plain identifier string of this name.
-
 </para>
       </summary>
     </member>
@@ -2005,7 +1908,6 @@
     <member name="T:Nemerle.Compiler.Parsetree.IParametersProvider">
       <summary>
         <para>implemented by parse tree and typed tree function headers
-
 </para>
       </summary>
     </member>
@@ -2116,7 +2018,6 @@
       <summary>
         <para>Transforms stream of tokens from given LexerBase to token tree
       with matched brackets.
-
 </para>
       </summary>
     </member>
@@ -2139,7 +2040,6 @@
         'a, b, c()', are alredy known to be in parent sequence,
         while 'd e' are in current temporary sequence, which might
         get added to parent_stream if separator (e.g. ';') occurs
-
 </para>
       </summary>
     </member>
@@ -2149,7 +2049,6 @@
         loose tokens, which have occured after last separator.
         It will probably form LooseGroup as an element of parent
         sequence or all elements will constitue parent
-
 </para>
       </summary>
     </member>
@@ -2195,20 +2094,16 @@
       <summary>
         <para>Closes currently created LooseGroup and adds it at the end of the
         parent group. After that we are ready to make another LooseGroup.
-
 </para>
       </summary>        <remarks><para>It is called mainly when separator token occurs.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.PreParser.handle_default_token(System.Int32,Nemerle.Compiler.Token,System.Boolean)">
       <summary>
         <para>Handle standard situations when new bracket group is beginning
         or there is erronous situation. Any non bracket token is
         appended to current LooseGroup.
-
 </para>
       </summary>        <remarks><para>Throws PreParserException when there is unmatched end bracket.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.PreParser.parse_brace_group(Nemerle.Compiler.Location,Nemerle.Compiler.Token.BeginBrace,System.Boolean,System.Boolean)" />
     <member name="M:Nemerle.Compiler.PreParser.parse_round_group(Nemerle.Compiler.Location,Nemerle.Compiler.Token.BeginRound)" />
@@ -2522,14 +2417,12 @@
     <member name="M:Nemerle.Compiler.Completion.Relocate(Nemerle.Compiler.Location,Nemerle.Compiler.RelocationInfo)">
       <summary>
         <para>Shift Location.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.Completion.RelocateFile(Nemerle.Compiler.Location,Nemerle.Compiler.RelocationInfo)">
       <summary>
         <para>Shift Location.
-
 </para>
       </summary>
     </member>
@@ -2538,7 +2431,6 @@
     <member name="M:Nemerle.Compiler.Completion.AddTypesAndNamespaces(System.Collections.Generic.List{Nemerle.Compiler.Elem},Nemerle.Core.list{Nemerle.Compiler.NamespaceTree.Node},Nemerle.Compiler.Parsetree.PExpr,Nemerle.Compiler.Parsetree.Name,System.Boolean,System.Boolean)">
       <summary>
         <para>extract information about types/namespaces and add it to 'elems' list.
-
 </para>
       </summary>
     </member>
@@ -2546,7 +2438,6 @@
     <member name="M:Nemerle.Compiler.Completion.ReplaceSpecialName(System.String)">
       <summary>
         <para>Look for special names
-
 </para>
       </summary>
     </member>
@@ -2556,7 +2447,6 @@
       <summary>
         <para>Send request on Build the Types Tree. It not lead to immediately rebuild project.
  The project will be rebuilded when IDE turn into idle state (user will not be type in editor).
-
 </para>
       </summary>
     </member>
@@ -2564,12 +2454,9 @@
       <summary>
         <para>This module is used to decode and encode Nemerle specific information about types,
  methods, etc. which are not directly expressible in .NET metadata.
-
 </para>
       </summary> <remarks><para>We use custom attributes to save / read this data in emitted / loaded assemblies.
-
 </para> <para>This module is stateless.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.TyCodec._N_walk_52849(Nemerle.Compiler.TyCodec._N_closureOf_FlattenTerm_52841,Nemerle.Compiler.TyCodec.Term)" />
     <member name="M:Nemerle.Compiler.TyCodec._N_tryAddSuperType_52736(Nemerle.Compiler.TyCodec._N_closureOf_ReflectTypeBuilder_52678,System.Type)" />
@@ -2584,7 +2471,6 @@
     <member name="M:Nemerle.Compiler.TyCodec.DecodeType(Nemerle.Compiler.LibraryReference,Nemerle.Collections.Map{System.String,Nemerle.Compiler.StaticTypeVar},System.String)">
       <summary>
         <para>Used to decode Nemerle types extracted from assembly metadata
-
 </para>
       </summary>
     </member>
@@ -2597,12 +2483,10 @@
     <member name="M:Nemerle.Compiler.TyCodec.EncodeType(Nemerle.Compiler.FixedType)">
       <summary>
         <para>Used to emit Nemerle types in assembly metadata
-
 </para>
       </summary> <remarks>
    <para>The type tree is converted to prefix, term-like notation.
  </para></remarks>
-
 </member>
     <member name="T:Nemerle.Compiler.TyCodec.Term" />
     <member name="T:Nemerle.Compiler.ExternalType" />
@@ -2691,7 +2575,6 @@
     <member name="M:Nemerle.Compiler.SystemTypeClass.Reflect(System.String)">
       <summary>
         <para>Reflects a type using NamespaceTree
-
 </para>
       </summary>
     </member>
@@ -2886,7 +2769,6 @@
     <member name="T:Nemerle.Compiler.LibraryReference">
       <summary>
         <para>This class stores information extracted from a referenced external library.
-
 </para>
       </summary>
     </member>
@@ -2899,14 +2781,12 @@
     <member name="F:Nemerle.Compiler.LibraryReference._library">
       <summary>
         <para>The assembly associated with this object
-
 </para>
       </summary>
     </member>
     <member name="F:Nemerle.Compiler.LibraryReference._location">
       <summary>
         <para>The location of this library
-
 </para>
       </summary>
     </member>
@@ -2918,7 +2798,6 @@
       <summary>
         <para>If set to true, the current assembly declares itself
  to be generated by the Nemerle compiler.
-
 </para>
       </summary>
     </member>
@@ -2927,7 +2806,6 @@
     <member name="M:Nemerle.Compiler.LibraryReference.#ctor(Nemerle.Compiler.LibraryReferenceManager,System.Reflection.Assembly,System.Boolean)">
       <summary>
         <para>Load an assembly. Extracts and processes the custom attributes array.
-
 </para>
       </summary>
     </member>
@@ -2937,7 +2815,6 @@
     <member name="M:Nemerle.Compiler.LibraryReference.TypeOfType(Nemerle.Collections.Map{System.String,Nemerle.Compiler.StaticTypeVar},System.Type)">
       <summary>
         <para>Turns a Framework type into something edible by Nemerle's type system
-
 </para>
       </summary>
     </member>
@@ -2946,7 +2823,6 @@
     <member name="M:Nemerle.Compiler.LibraryReference.ConstructTypeInfo(System.Type,Nemerle.Compiler.NamespaceTree.Node)">
       <summary>
         <para>Construct TypeInfo object from given type in current assembly.
-
 </para>
       </summary>
     </member>
@@ -2954,7 +2830,6 @@
       <summary>
         <para>Looks for type named [name] that is internal to current assembly. Used
  by type attribute decoder.
-
 </para>
       </summary>
     </member>
@@ -2964,7 +2839,6 @@
     <member name="F:Nemerle.Compiler.LibraryReference.Manager">
       <summary>
         <para>This class stores information extracted from a referenced external library.
-
 </para>
       </summary>
     </member>
@@ -2973,7 +2847,6 @@
     <member name="M:Nemerle.Compiler.LibraryReference.get_SystemTypeCache">
       <summary>
         <para>This class stores information extracted from a referenced external library.
-
 </para>
       </summary>
     </member>
@@ -2981,14 +2854,12 @@
     <member name="M:Nemerle.Compiler.LibraryReference.__fake">
       <summary>
         <para>This class stores information extracted from a referenced external library.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.LibraryReference.get_Assembly">
       <summary>
         <para>The assembly associated with this object
-
 </para>
       </summary>
     </member>
@@ -3007,7 +2878,6 @@
     <member name="T:Nemerle.Compiler.LibraryReferenceManager">
       <summary>
         <para>LibRefManager for the referenced libraries
-
 </para>
       </summary>
     </member>
@@ -3023,7 +2893,6 @@
     <member name="M:Nemerle.Compiler.LibraryReferenceManager.#ctor(Nemerle.Compiler.ManagerClass,Nemerle.Core.list{System.String})">
       <summary>
         <para>constructor. Always load the Framework core library.
-
 </para>
       </summary>
     </member>
@@ -3031,7 +2900,6 @@
       <summary>
         <para>Stores the referenced library for later lookup by the namespaces. Also
  add transitive closure of libraries needed by given assembly.
-
 </para>
       </summary>
     </member>
@@ -3043,7 +2911,6 @@
     <member name="M:Nemerle.Compiler.LibraryReferenceManager.DirectoryOfCodebase(System.String)">
       <summary>
         <para>Remove assembly file name from URL returned by Assembly.CodeBase.
-
 </para>
       </summary>
     </member>
@@ -3063,7 +2930,6 @@
     <member name="F:Nemerle.Compiler.LibraryReferenceManager._lib_path">
       <summary>
         <para>List of directories we look for assemblies in.
-
 </para>
       </summary>
     </member>
@@ -3076,7 +2942,6 @@
     <member name="M:Nemerle.Compiler.LibraryReferenceManager.RemoveInternalExtensionMethods">
       <summary>
         <para>Remove extension methods defined in code (not external).
-
 </para>
       </summary>
     </member>
@@ -3090,7 +2955,6 @@
     <member name="F:Nemerle.Compiler.LibraryReferenceManager.Manager">
       <summary>
         <para>LibRefManager for the referenced libraries
-
 </para>
       </summary>
     </member>
@@ -3099,7 +2963,6 @@
     <member name="M:Nemerle.Compiler.LibraryReferenceManager.get_SystemTypeCache">
       <summary>
         <para>LibRefManager for the referenced libraries
-
 </para>
       </summary>
     </member>
@@ -3107,7 +2970,6 @@
     <member name="M:Nemerle.Compiler.LibraryReferenceManager.__fake">
       <summary>
         <para>LibRefManager for the referenced libraries
-
 </para>
       </summary>
     </member>
@@ -3166,14 +3028,12 @@
     <member name="M:Nemerle.Compiler.DecisionTreeCompiler.emit_compare_with(Nemerle.Compiler.Typedtree.TExpr,Nemerle.Compiler.Literal)">
       <summary>
         <para>Emit comparison code with specific literal.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.DecisionTreeCompiler.get_constant_object(Nemerle.Compiler.TypeInfo,Nemerle.Compiler.TypeVar)">
       <summary>
         <para>Returns the constant object for a parameterless variant constructor
-
 </para>
       </summary>
     </member>
@@ -3198,7 +3058,6 @@
       <summary>
         <para>This part of TypesManages is responsible for generation of System.Reflection.Emit structures
  composing program hierarchy. It executes emission of all classes and their members.
-
 </para>
       </summary>
     </member>
@@ -3226,14 +3085,12 @@
     <member name="P:Nemerle.Compiler.TypesManager.GeneratedAssembly">
       <summary>
         <para>Returns generated assembly for runtime instantations of its types
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypesManager.SaveAssembly">
       <summary>
         <para>Saves the constructed assembly to a file
-
 </para>
       </summary>
     </member>
@@ -3244,7 +3101,6 @@
  - emit bodies of methods
  - finalize value types
  - finalize all types
-
 </para>
       </summary>
     </member>
@@ -3253,7 +3109,6 @@
     <member name="M:Nemerle.Compiler.TypesManager.is_aux_decl(Nemerle.Compiler.TypeBuilder)">
       <summary>
         <para>Check if declaration is auxiliary, used internally etc.
-
 </para>
       </summary>
     </member>
@@ -3287,18 +3142,15 @@
     <member name="M:Nemerle.Compiler.TypesManager.RemoveProgramTypes">
       <summary>
         <para>Clears the type tree from classes defined in currently analyzed program
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypesManager.determine_subtyping">
       <summary>
         <para>Construct datastructures we use to check subtyping relations.
-
 </para>
       </summary> <remarks>
    <para>This probably the hardest part of processing type declarations.
-
 </para>   <para>Each type directly subtypes types it extends or implements.  This
    pass computes transitive closure of direct subtyping relation
    and stores it [TypeBuilder.supertypes] map.  .NET generics doesn't allow
@@ -3306,31 +3158,26 @@
    use map from (id of) subtyped TypeBuilder object to actual parameters
    of subtyped type.
  </para></remarks>
-
 </member>
     <member name="M:Nemerle.Compiler.TypesManager.Iter(Nemerle.Core.list{Nemerle.Compiler.TypeBuilder},Nemerle.Builtins.FunctionVoid{Nemerle.Compiler.TypeBuilder})" />
     <member name="M:Nemerle.Compiler.TypesManager.Iter(Nemerle.Builtins.FunctionVoid{Nemerle.Compiler.TypeBuilder})">
       <summary>
         <para>Iterate over all types defined in source code.
-
 </para>
       </summary> <remarks><para>Supertypes are always processed before subtypes otherwise
  source code order is retained.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.TypesManager.IterConditionally(Nemerle.Builtins.FunctionVoid{Nemerle.Compiler.TypeBuilder},Nemerle.Builtins.Function{Nemerle.Compiler.TypeBuilder,System.Boolean})" />
     <member name="M:Nemerle.Compiler.TypesManager.TopTypeBuilders" />
     <member name="M:Nemerle.Compiler.TypesManager.TopIter(Nemerle.Builtins.FunctionVoid{Nemerle.Compiler.TypeBuilder})">
       <summary>
         <para>Iterate over top level types in inheritance order.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypesManager.Run">
       <summary>
         <para>Main function of type declaration handling pass.
-
 </para>
       </summary> <remarks>
    <para>- constructing typing environments [TypeBuilder.make_tyenvs]
@@ -3341,7 +3188,6 @@
    - adding members [TypeBuilder.add_members]
    - adding the variant/variant option special matching methods
  </para></remarks>
-
 </member>
     <member name="M:Nemerle.Compiler.TypesManager.SaveGeneratedSourceFile" />
     <member name="M:Nemerle.Compiler.TypesManager.GetNameForGeneratedSourceFile" />
@@ -3355,7 +3201,6 @@
       <summary>
         <para>This method iterates through all the known type builders,
  looking for unused global symbols.
-
 </para>
       </summary>
     </member>
@@ -3369,7 +3214,6 @@
       <summary>
         <para>This part of TypesManages is responsible for generation of System.Reflection.Emit structures
  composing program hierarchy. It executes emission of all classes and their members.
-
 </para>
       </summary>
     </member>
@@ -3379,7 +3223,6 @@
       <summary>
         <para>This part of TypesManages is responsible for generation of System.Reflection.Emit structures
  composing program hierarchy. It executes emission of all classes and their members.
-
 </para>
       </summary>
     </member>
@@ -3388,7 +3231,6 @@
       <summary>
         <para>This part of TypesManages is responsible for generation of System.Reflection.Emit structures
  composing program hierarchy. It executes emission of all classes and their members.
-
 </para>
       </summary>
     </member>
@@ -3421,42 +3263,36 @@
  the interfaces being implemented are assumed to have been processed
  before constructing a dependant class. All the declarations and method
  implementations will be created successively in subsequent passes.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.make_nemerle_variant_attribute(Nemerle.Core.list{Nemerle.Compiler.TypeInfo})">
       <summary>
         <para>Builds a Nemerle variant attribute
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.make_nemerle_type_alias_attribute(Nemerle.Compiler.FixedType)">
       <summary>
         <para>Builds a Nemerle type alias
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.make_nemerle_variant_option_attribute(System.Boolean)">
       <summary>
         <para>Builds a Nemerle variant option attribute
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.make_type_attributes(Nemerle.Compiler.NemerleModifiers,System.Boolean,System.Boolean)">
       <summary>
         <para>Converts Nemerle modifiers to the Framework type attributes.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.EmitImplementation">
       <summary>
         <para>Set up custom attributes on members of this TypeBuilder. Compile method's bodies.
-
 </para>
       </summary>
     </member>
@@ -3464,7 +3300,6 @@
       <summary>
         <para>This methods walks the class and adds field and method declarations.
  The method implementation will be filled in a separate pass.
-
 </para>
       </summary>
     </member>
@@ -3472,7 +3307,6 @@
       <summary>
         <para>Reads the inheritance list of a class and retrieves the base
  type and builds the array of interfaces implemented by the class.
-
 </para>
       </summary>
     </member>
@@ -3520,14 +3354,12 @@
     <member name="F:Nemerle.Compiler.TypeBuilder.instance_ctor_occured">
       <summary>
         <para>if it doesn't, we must add implicit empty constructor
-
 </para>
       </summary>
     </member>
     <member name="F:Nemerle.Compiler.TypeBuilder.phase">
       <summary>
         <para>Marker for [TypeBuilder.Iter].
-
 </para>
       </summary>
     </member>
@@ -3536,10 +3368,8 @@
     <member name="F:Nemerle.Compiler.TypeBuilder.iterate_first">
       <summary>
         <para>Defining type if any and transitive closure of base types of this type.
-
 </para>
       </summary> <remarks><para>Used by [TypeBuilder.Iter] function.
-
 </para></remarks></member>
     <member name="F:Nemerle.Compiler.TypeBuilder.is_special_variant_methods_added" />
     <member name="F:Nemerle.Compiler.TypeBuilder._N__N_event_field_of_MethodBeforeStage2_3385" />
@@ -3560,21 +3390,18 @@
         <para>Raises MethodBeforeStage2 event.
  </para>
       </summary>
-
 </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.OnMethodBeforeStage3(System.Object,Nemerle.Compiler.StageEventArgs)">
       <summary>
         <para>Raises MethodBeforeStage3 event.
  </para>
       </summary>
-
 </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.OnMethodBeforeStage4(System.Object,Nemerle.Compiler.StageEventArgs)">
       <summary>
         <para>Raises MethodBeforeStage4 event.
  </para>
       </summary>
-
 </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.RaiseBeforeStage(System.EventHandler{Nemerle.Compiler.StageEventArgs},Nemerle.Compiler.StageEventArgs)" />
     <member name="M:Nemerle.Compiler.TypeBuilder.CalcAccessibility" />
@@ -3606,7 +3433,6 @@
     <member name="P:Nemerle.Compiler.TypeBuilder.DeclaringType">
       <summary>
         <para>Return type we were defined in (null for toplevel types).
-
 </para>
       </summary>
     </member>
@@ -3616,7 +3442,6 @@
     <member name="P:Nemerle.Compiler.TypeBuilder.Name">
       <summary>
         <para>Return name without any dots.
-
 </para>
       </summary>
     </member>
@@ -3636,7 +3461,6 @@
     <member name="P:Nemerle.Compiler.TypeBuilder.DeclaredTypeParametersCount">
       <summary>
         <para>Count of type parameters declared in this type (without type parameters of outer types)
-
 </para>
       </summary>
     </member>
@@ -3644,7 +3468,6 @@
     <member name="P:Nemerle.Compiler.TypeBuilder.TyparmsCount">
       <summary>
         <para>Count of type parameters in this type and all outer types
-
 </para>
       </summary>
     </member>
@@ -3656,7 +3479,6 @@
     <member name="M:Nemerle.Compiler.TypeBuilder.DefineAndReturn(Nemerle.Compiler.Parsetree.ClassMember)">
       <summary>
         <para>Adds a definition and returns the new MemberBuilder, if available
-
 </para>
       </summary>
     </member>
@@ -3666,14 +3488,12 @@
     <member name="M:Nemerle.Compiler.TypeBuilder.Define(Nemerle.Compiler.Parsetree.ClassMember,System.Boolean)">
       <summary>
         <para>Adds a definition to this type
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.Compile">
       <summary>
         <para>Builds this type
-
 </para>
       </summary>
     </member>
@@ -3690,7 +3510,6 @@
       <summary>
         <para>Marks this with the SpecialName attribute, the attribute will
  be propagated to members and contained types at a later stage.
-
 </para>
       </summary>
     </member>
@@ -3698,13 +3517,11 @@
     <member name="M:Nemerle.Compiler.TypeBuilder.GetDirectSuperTypes">
       <summary>
         <para>Return list of types that we directly subtype.
-
 </para>
       </summary> <remarks>
    <para>This includes [extends] and [implements], as well as parent variant
    type for variant options.
  </para></remarks>
-
 </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.GetConstantObject" />
     <member name="M:Nemerle.Compiler.TypeBuilder.get_BaseType" />
@@ -3728,11 +3545,9 @@
       <summary>
         <para>Searches for the members defined for the current TypeInfo, using the specified
       binding constraints.
-
 </para>
       </summary>      <remarks>
         <para>Members include properties, methods, fields, events, and so on.
-
 </para>        <para>The following BindingFlags filter flags can be used to define which members to
         include in the search:
         <ul>
@@ -3748,19 +3563,14 @@
             and protected members) in the search.
           </li>
         </ul>
-
 </para>        <para>The following BindingFlags modifier flags can be used to change how the search
         works:
-
 </para>        <para>BindingFlags.DeclaredOnly to search only the members declared on the TType,
         not members that were simply inherited.
-
 </para>        <para>Calling this method with only the Public flag or only the NonPublic flag will
         return the specified members and does not require any other flags.
-
 </para>        <para>See Nemerle.Compiler.BindingFlags for more information.
       </para></remarks>
-
 </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.GetMembers" />
     <member name="M:Nemerle.Compiler.TypeBuilder.GetParsedMembers(System.Boolean)" />
@@ -3770,7 +3580,6 @@
       <summary>
         <para>Searches for the methods defined for the current TypeInfo, using the
       specified binding constraints.
-
 </para>
       </summary>
     </member>
@@ -3779,7 +3588,6 @@
       <summary>
         <para>Searches for the constructors defined for the current TypeBuilder, using the
       specified BindingFlags.
-
 </para>
       </summary>
     </member>
@@ -3801,7 +3609,6 @@
     <member name="M:Nemerle.Compiler.TypeBuilder.make_tyenvs">
       <summary>
         <para>Construct typing environments for each declaration.
-
 </para>
       </summary> <remarks>
    <para>The first thing to do is to create typing environment [Tyvar.TEnv]
@@ -3809,10 +3616,8 @@
    with type variables (transformed into [Tyvar.T] objects).  Finally
    constraints (type expressions, which are first bound) of each
    type variable are stored in [Tyvar.T].
-
 </para>   <para>Typing environment maps names of type variables to [Tyvar.T] objects.
  </para></remarks>
-
 </member>
     <member name="F:Nemerle.Compiler.TypeBuilder._nestingLevel" />
     <member name="M:Nemerle.Compiler.TypeBuilder.TryAddSuperType(Nemerle.Compiler.FixedType.Class)" />
@@ -3822,7 +3627,6 @@
         <para>Bind type expressions occurring in type declarations. This
  includes [extends] type, [implements] list, and aliased type
  in case of type alias declaration.
-
 </para>
       </summary> <remarks>
    <para>Binding type expression refers to rewriting [Parsetree.Type]
@@ -3830,7 +3634,6 @@
    constructors (to [TypeInfo] objects) and type variables (to [Tyvar.T]
    objects).
  </para></remarks>
-
 </member>
     <member name="F:Nemerle.Compiler.TypeBuilder.subtyping_map_constructed" />
     <member name="M:Nemerle.Compiler.TypeBuilder.construct_subtyping_map" />
@@ -3866,13 +3669,11 @@
         <para>Collect type members (fields and methods, but not types, which
  are already collected in [TypeBuilder.contained_types]) and store
  them in [TypeInfo.member_map] and [TypeBuilder.member_list].
-
 </para>
       </summary> <remarks>
    <para>Members are first transferred from the [Parsetree] into the
    [Typedtree] namespace by binding appropriate types.
  </para></remarks>
-
 </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.add_constant_object_ctor" />
     <member name="M:Nemerle.Compiler.TypeBuilder.add_special_variant_methods">
@@ -3881,8 +3682,6 @@
  are used to accelerate matching over variants, allowing us to use
  a single TExpr.Switch statement to identify a variant options instead of
  a series of TExpr.If/HasType instructions.
-
-
 </para>
       </summary>
     </member>
@@ -3890,7 +3689,6 @@
       <summary>
         <para>Add constant fields with single instance of parameter-less
  variant options.
-
 </para>
       </summary>
     </member>
@@ -3900,14 +3698,12 @@
     <member name="M:Nemerle.Compiler.TypeBuilder.mark_members_with_special_name">
       <summary>
         <para>Propagates the SpecialName mark throughout the member hierarchy
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.resolve_method_implements">
       <summary>
         <para>Resolves overrides for the required interface methods
-
 </para>
       </summary>
     </member>
@@ -3916,7 +3712,6 @@
         <para>determine equality of methods signatures taking into account types substitutions.
  For axample you can compare method of implemented interface and it implementation
  on current type.
-
 </para>
       </summary>
     </member>
@@ -3925,7 +3720,6 @@
       <summary>
         <para>Return interfaces [this] needs to implement (that is it says it will
  implement them, but they are not implemented in base class).
-
 </para>
       </summary>
     </member>
@@ -3940,7 +3734,6 @@
       <summary>
         <para>Check if types that are already bound are correctly applied.
       Check accessibility.
-
 </para>
       </summary>
     </member>
@@ -3949,7 +3742,6 @@
     <member name="M:Nemerle.Compiler.TypeBuilder.check_abstract">
       <summary>
         <para>Checks for abstract method in non-abstract class errors.
-
 </para>
       </summary>
     </member>
@@ -3957,28 +3749,24 @@
       <summary>
         <para>Performs access attributes related checks. Returns an optional
  description of the problem.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.CheckTypeAttributes">
       <summary>
         <para>Performs attributes checks for type definitions.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.GetDirectSubTypes">
       <summary>
         <para>Get direct (derived directly) subtypes of given type.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypeBuilder.GetAllSubTypes">
       <summary>
         <para>Get all subtypes of given type.
-
 </para>
       </summary>
     </member>
@@ -4014,7 +3802,6 @@
     <member name="M:Nemerle.Compiler.MethodBuilder.CompileAfterTyping">
       <summary>
         <para>Emits a method's body
-
 </para>
       </summary>
     </member>
@@ -4023,7 +3810,6 @@
     <member name="M:Nemerle.Compiler.MethodBuilder.assign_parameter_indexes(System.Boolean)">
       <summary>
         <para>Assigns an ordinal index to each of a method's parameter
-
 </para>
       </summary>
     </member>
@@ -4031,21 +3817,18 @@
     <member name="M:Nemerle.Compiler.MethodBuilder.make_method_attributes(Nemerle.Compiler.NemerleModifiers)">
       <summary>
         <para>Converts Nemerle modifiers to the CLI method attributes.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.MethodBuilder.CreateMethodBuilder(System.Reflection.Emit.TypeBuilder)">
       <summary>
         <para>Adds a method builder to a type builder
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.MethodBuilder.CreateConstructorBuilder(System.Reflection.Emit.TypeBuilder)">
       <summary>
         <para>Adds a constructor builder to a type builder
-
 </para>
       </summary>
     </member>
@@ -4054,7 +3837,6 @@
     <member name="F:Nemerle.Compiler.MethodBuilder.method_base">
       <summary>
         <para>system reflection emit method/constructor builder is stored here
-
 </para>
       </summary>
     </member>
@@ -4082,7 +3864,6 @@
     <member name="P:Nemerle.Compiler.MethodBuilder.Ast">
       <summary>
         <para>Parsed representation (AST) of function.
-
 </para>
       </summary>
     </member>
@@ -4136,7 +3917,6 @@
     <member name="M:Nemerle.Compiler.MethodBuilder.CheckAttributes">
       <summary>
         <para>Performs attributes checks for method definitions.
-
 </para>
       </summary>
     </member>
@@ -4169,7 +3949,6 @@
     <member name="M:Nemerle.Compiler.FieldBuilder.CreateEmitBuilder(System.Reflection.Emit.TypeBuilder)">
       <summary>
         <para>Adds a field builder
-
 </para>
       </summary>
     </member>
@@ -4181,7 +3960,6 @@
     <member name="P:Nemerle.Compiler.FieldBuilder.Ast">
       <summary>
         <para>Parsed representation (AST) of field.
-
 </para>
       </summary>
     </member>
@@ -4191,7 +3969,6 @@
     <member name="F:Nemerle.Compiler.FieldBuilder._initializerLocation">
       <summary>
         <para>////////////////////////////////////////////////////////////////////////
-
 </para>
       </summary>
     </member>
@@ -4210,7 +3987,6 @@
     <member name="P:Nemerle.Compiler.FieldBuilder.IsMutable">
       <summary>
         <para>///////////////////////////////////////////////////////////////////////
-
 </para>
       </summary>
     </member>
@@ -4227,7 +4003,6 @@
     <member name="M:Nemerle.Compiler.FieldBuilder.CheckAttributes">
       <summary>
         <para>Performs attributes checks for field definition.
-
 </para>
       </summary>
     </member>
@@ -4241,7 +4016,6 @@
     <member name="M:Nemerle.Compiler.FieldBuilder.get_InitializerLocation">
       <summary>
         <para>////////////////////////////////////////////////////////////////////////
-
 </para>
       </summary>
     </member>
@@ -4254,7 +4028,6 @@
     <member name="M:Nemerle.Compiler.PropertyBuilder.CreateEmitBuilder(System.Reflection.Emit.TypeBuilder)">
       <summary>
         <para>Adds a property builder
-
 </para>
       </summary>
     </member>
@@ -4272,7 +4045,6 @@
         <para>Parsed representation (AST) of property.
  Note: available only in CompletionMode
  (if Manager.IsIntelliSenseMode = true)
-
 </para>
       </summary>
     </member>
@@ -4304,7 +4076,6 @@
     <member name="M:Nemerle.Compiler.PropertyBuilder.CheckAttributes">
       <summary>
         <para>Performs attributes checks for properties definitions.
-
 </para>
       </summary>
     </member>
@@ -4327,7 +4098,6 @@
     <member name="M:Nemerle.Compiler.EventBuilder.CreateEmitBuilder(System.Reflection.Emit.TypeBuilder)">
       <summary>
         <para>Adds an event builder
-
 </para>
       </summary>
     </member>
@@ -4342,7 +4112,6 @@
         <para>Parsed representation (AST) of event.
  Note: available only in CompletionMode
  (if Manager.IsIntelliSenseMode = true)
-
 </para>
       </summary>
     </member>
@@ -4356,7 +4125,6 @@
     <member name="M:Nemerle.Compiler.EventBuilder.CheckAttributes">
       <summary>
         <para>Performs attributes checks for event definition.
-
 </para>
       </summary>
     </member>
@@ -4368,7 +4136,6 @@
     <member name="T:Nemerle.Compiler.ILEmitter">
       <summary>
         <para>Generates the IL code for a method or a constructor
-
 </para>
       </summary>
     </member>
@@ -4385,7 +4152,6 @@
     <member name="M:Nemerle.Compiler.ILEmitter.#cctor">
       <summary>
         <para>Generates the IL code for a method or a constructor
-
 </para>
       </summary>
     </member>
@@ -4410,7 +4176,6 @@
     <member name="M:Nemerle.Compiler.ILEmitter.#ctor(Nemerle.Compiler.MethodBuilder)">
       <summary>
         <para>Creates and executes a code generator for a method
-
 </para>
       </summary>
     </member>
@@ -4455,14 +4220,12 @@
     <member name="M:Nemerle.Compiler.ILEmitter.InversBool">
       <summary>
         <para>If stack contains 1 it plase and on the contrary
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.ILEmitter.emit(Nemerle.Compiler.Typedtree.TExpr)">
       <summary>
         <para>Emits an expression.
-
 </para>
       </summary>
     </member>
@@ -4478,19 +4241,16 @@
     <member name="M:Nemerle.Compiler.ILEmitter.emit_switch(Nemerle.Core.option{Nemerle.Compiler.Typedtree.TExpr},Nemerle.Core.list{Nemerle.Builtins.Tuple{System.Int32,Nemerle.Compiler.Typedtree.TExpr}})">
       <summary>
         <para>Emits the TExpr.Switch instruction
-
 </para>
       </summary> <remarks><para>Asserts that the first of the case indices is zero. Quietly
  asserts that the indexer is verified to be in a valid range -- i.e.
  that the rescaling substraction does not overflow and that we never
  generate too long switch instructions -- assuring this should belong
  to a higher level logic.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.ILEmitter.emit_ldarg(System.Int32)">
       <summary>
         <para>Emits an LDARG instruction
-
 </para>
       </summary>
     </member>
@@ -4498,31 +4258,26 @@
     <member name="M:Nemerle.Compiler.ILEmitter.emit_ldarga(System.Int32)">
       <summary>
         <para>Emits an LDARGA instruction
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.ILEmitter.emit_value_type_conversion(Nemerle.Compiler.Location,Nemerle.Compiler.FixedType,Nemerle.Compiler.FixedType,System.Boolean)">
       <summary>
         <para>Performs value type conversion form l to r
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.ILEmitter.emit_method_call(Nemerle.Compiler.Typedtree.TExpr,System.Boolean,System.Reflection.MethodInfo,Nemerle.Compiler.IMethod,Nemerle.Compiler.FixedType)">
       <summary>
         <para>Emits a method call.
-
 </para>
       </summary> <remarks><para>If it is a tail call (which is checked based on [expr]), then we emit
  tail modifier.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.ILEmitter.emit_and_convert_to_address(Nemerle.Compiler.Typedtree.TExpr)" />
     <member name="M:Nemerle.Compiler.ILEmitter.declare_val_local_slot(Nemerle.Compiler.LocalValue)">
       <summary>
         <para>Declares a local variable
-
 </para>
       </summary>
     </member>
@@ -4531,10 +4286,8 @@
     <member name="M:Nemerle.Compiler.ILEmitter.emit_array_store_opcode(System.Type)">
       <summary>
         <para>Emits a STELEM instruction for a given type
-
 </para>
       </summary> <remarks><para>NOTE: there is no Stelem_U* in System.Reflection.Emit.OpCodes.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.ILEmitter.emit_value_to_ptr_conversion(Nemerle.Compiler.Typedtree.TExpr,Nemerle.Compiler.TypeVar)" />
     <member name="M:Nemerle.Compiler.ILEmitter.get_elem_size(Nemerle.Compiler.TypeVar)" />
@@ -4544,14 +4297,12 @@
     <member name="M:Nemerle.Compiler.ILEmitter.emit_array_load_opcode(System.Type)">
       <summary>
         <para>Emits a LDELEM instruction for a given type
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.ILEmitter.emit_ldind_for_value_type(System.Type)">
       <summary>
         <para>Emits a LDIND instruction for a given value type
-
 </para>
       </summary>
     </member>
@@ -4559,14 +4310,12 @@
     <member name="M:Nemerle.Compiler.ILEmitter.emit_literal(Nemerle.Compiler.Literal)">
       <summary>
         <para>Emits a literal
-
 </para>
       </summary>
     </member>
     <member name="F:Nemerle.Compiler.ILEmitter.Manager">
       <summary>
         <para>Generates the IL code for a method or a constructor
-
 </para>
       </summary>
     </member>
@@ -4575,7 +4324,6 @@
     <member name="M:Nemerle.Compiler.ILEmitter.get_SystemTypeCache">
       <summary>
         <para>Generates the IL code for a method or a constructor
-
 </para>
       </summary>
     </member>
@@ -4583,7 +4331,6 @@
     <member name="M:Nemerle.Compiler.ILEmitter.__fake">
       <summary>
         <para>Generates the IL code for a method or a constructor
-
 </para>
       </summary>
     </member>
@@ -4849,7 +4596,6 @@
         <para>Позволяет указать средствам интеллисенса, что данный член ссылается на
  некий (другой) метод. Этот метод может содержать код сгенерированный
  на основе кода члена содержащего данную ссылку.
-
 </para>
       </summary>
     </member>
@@ -4909,7 +4655,6 @@
     <member name="M:Nemerle.Compiler.MemberBuilder.check_method_like_attributes(System.String,System.String)">
       <summary>
         <para>Performs the attributes checks that are common to methods and properties
-
 </para>
       </summary>
     </member>
@@ -4936,7 +4681,6 @@
         <para>Позволяет указать средствам интеллисенса, что данный член ссылается на
  некий (другой) метод. Этот метод может содержать код сгенерированный
  на основе кода члена содержащего данную ссылку.
-
 </para>
       </summary>
     </member>
@@ -4993,7 +4737,6 @@
     <member name="M:Nemerle.Compiler.Delegates.GenerateDelegateClass(Nemerle.Compiler.GlobalEnv,Nemerle.Compiler.TypeBuilder,Nemerle.Compiler.AttributesAndModifiers,Nemerle.Compiler.AttributesAndModifiers,Nemerle.Compiler.Parsetree.PFunHeader)">
       <summary>
         <para>Generates a delegate class
-
 </para>
       </summary>
     </member>
@@ -5012,14 +4755,12 @@
     <member name="F:Nemerle.Compiler.GlobalEnv.SyntaxKeywords">
       <summary>
         <para>this is a map of keywords, which trigger syntax extensions
-
 </para>
       </summary>
     </member>
     <member name="F:Nemerle.Compiler.GlobalEnv.Keywords">
       <summary>
         <para>this is a set of keywords present in current global environment
-
 </para>
       </summary>
     </member>
@@ -5058,7 +4799,6 @@
  Lower index means higher priority
  </para>
       </returns>
-
 </member>
     <member name="M:Nemerle.Compiler.GlobalEnv.get_CurrentNamespace" />
     <member name="P:Nemerle.Compiler.GlobalEnv.CurrentNamespace" />
@@ -5071,7 +4811,6 @@
       <summary>
         <para>qid - relative (from current namespace) path to namespace node
  Note: Use  Manager.CoreEnv to open namespace frome root.
-
 </para>
       </summary>
     </member>
@@ -5080,7 +4819,6 @@
       <summary>
         <para>this is the auxiliary function for making set of opened namespaces
         unique and warn if namespaces are opened multiple times by user
-
 </para>
       </summary>
     </member>
@@ -5091,14 +4829,12 @@
         by
         _tmp1.Y.pointed_by_X_Z // for each part in current namespace
         using _tmp1;
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.GlobalEnv.#ctor(System.String,Nemerle.Compiler.ManagerClass)">
       <summary>
         <para>Creates environment described by given string encoded for purpose of storing macro contexts
-
 </para>
       </summary>
     </member>
@@ -5122,7 +4858,6 @@
         <para>Interface, which will be implemented by class encapsulating macro
       function. It will allow dynamic execution of macro by compiler
       itself
-
 </para>
       </summary>
     </member>
@@ -5149,7 +4884,6 @@
     <member name="T:Nemerle.Compiler.MacroClasses">
       <summary>
         <para>GENERATION OF MACRO CLASSES SECTION
-
 </para>
       </summary>
     </member>
@@ -5173,7 +4907,6 @@
         [SyntaxExtension] for retrieving syntax extension it defines,
         [CallTransform] for transforming supported call parameters to
           description taken by [Run] method
-
 </para>
       </summary>
     </member>
@@ -5194,12 +4927,10 @@
     <member name="M:Nemerle.Compiler.NamespaceTree.AddType(Nemerle.Compiler.TypeBuilder,Nemerle.Compiler.NamespaceTree.Node,Nemerle.Compiler.Parsetree.TopDeclaration)">
       <summary>
         <para>Function for adding type to namespace tree.
-
 </para>
       </summary>        <remarks><para>It checks if given
         class is already in namespace tree and if it is and has `partial' modifier
         it add members to existing type instead of creating new TypeBuilder.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.NamespaceTree.AddMacro(Nemerle.Core.list{System.String},Nemerle.Compiler.IMacro)" />
     <member name="M:Nemerle.Compiler.NamespaceTree.AddMacro(Nemerle.Compiler.NamespaceTree.Node,Nemerle.Compiler.IMacro)" />
@@ -5233,15 +4964,12 @@
     <member name="M:Nemerle.Compiler.ScanTypeHierarchy.ProcessDeclaration(Nemerle.Compiler.Parsetree.TopDeclaration)">
       <summary>
         <para>Process toplevel type declaration.
-
 </para>
       </summary>        <remarks><para>This function does the very first pass, after parsing.
         It creates [TypeBuilder] object for each type and registers it
         in namespace hierarchy.
         It also creates classes of delegates and macros.
-
 </para>        <para>This module is stateless.
-
 </para></remarks></member>
     <member name="F:Nemerle.Compiler.ScanTypeHierarchy.Manager" />
     <member name="M:Nemerle.Compiler.ScanTypeHierarchy.get_InternalType" />
@@ -5345,7 +5073,6 @@
     <member name="M:Nemerle.Compiler.IMethod.GetParameters">
       <summary>
         <para>Obtains list of parameters of typed method
-
 </para>
       </summary>
     </member>
@@ -5354,7 +5081,6 @@
       <summary>
         <para>Obtain return type of typed method. If it is already inferred/fixed
  the value is one of FixedType variant options.
-
 </para>
       </summary>
     </member>
@@ -5410,15 +5136,12 @@
       <summary>
         <para>If this type was defined as [class Foo ('a, 'b) { ... }] then return
  type expression [Foo ('a, 'b)].
-
 </para>
       </summary> <remarks><para>Used mainly with [FreshSubst ()] or [MakeSubst ()].
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.TypeInfo._N_getGenericParamCount_58086(Nemerle.Compiler.IMember)">
       <summary>
         <para>workaround since generic parameters are not coming via signature
-
 </para>
       </summary>
     </member>
@@ -5475,7 +5198,6 @@
       <summary>
         <para>Searches for the types defined for the current TypeInfo, using the
  specified BindingFlags.
-
 </para>
       </summary>
     </member>
@@ -5508,10 +5230,8 @@
     <member name="P:Nemerle.Compiler.TypeInfo.AttributeTargets">
       <summary>
         <para>Returns custom attribute targets valid for this custom attribute.
-
 </para>
       </summary>     <remarks><para>Valid only for type representing custom attribute.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.TypeInfo.get_IsStatic" />
     <member name="P:Nemerle.Compiler.TypeInfo.IsStatic">
@@ -5539,7 +5259,6 @@
       <summary>
         <para>Return full qualified type name with namespaces and nesting types,
       all .-separated.
-
 </para>
       </summary>
     </member>
@@ -5548,7 +5267,6 @@
       <summary>
         <para>Return full qualified type name with namespaces (.-separated) and
       nesting types (+-separated).
-
 </para>
       </summary>
     </member>
@@ -5561,11 +5279,9 @@
     <member name="M:Nemerle.Compiler.TypeInfo.LookupMember(System.String,System.Boolean)">
       <summary>
         <para>Look for specified member.
-
 </para>
       </summary>      <remarks><para>Semantics of returning base class member is the same as for
       [System.Type.GetMember] method.
-
 </para></remarks></member>
     <member name="F:Nemerle.Compiler.TypeInfo._recursionLevel" />
     <member name="M:Nemerle.Compiler.TypeInfo.GetTydecl">
@@ -5577,18 +5293,15 @@
       <summary>
         <para>Construct substitution resulting from applying this type constructor
       to specified arguments.
-
 </para>
       </summary>      <remarks><para>For example assuming our type parameters are are ('a, 'b), then
       [MakeSubst (t1, t2)] produces substitution { 'a := t1; 'b := t2 }.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.TypeInfo.MakeUncheckedSubst(Nemerle.Core.list{Nemerle.Compiler.TypeVar})" />
     <member name="M:Nemerle.Compiler.TypeInfo.FreshSubst">
       <summary>
         <para>Return substitution replacing each of our type parameters with fresh
  type variable.
-
 </para>
       </summary>
     </member>
@@ -5596,14 +5309,11 @@
     <member name="M:Nemerle.Compiler.TypeInfo.GetTypeArgumentsForSuperClass(Nemerle.Compiler.TypeInfo)">
       <summary>
         <para>If $this subtypes of $typeInfo, then return list of type parameters under which we subtype given type.
-
 </para>
       </summary> <remarks><para>For example if [A ['a] :&gt; B [int]], then ["A".GetTypeArgumentsForSuperClass ("B")]
  returns [[int]].
-
 </para> <para>This information can be also fetched from [GetDirectSuperTypes()]
  method but this function is transitive.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.TypeInfo.IsDerivedFrom(Nemerle.Compiler.TypeInfo)" />
     <member name="M:Nemerle.Compiler.TypeInfo.IsDerivedFrom(Nemerle.Compiler.FixedType.Class)" />
@@ -5614,7 +5324,6 @@
       <summary>
         <para>Return substitution to apply to types of members of our supertype [ti]
  to get types of members in [this].
-
 </para>
       </summary> <remarks>
     <para>For example consider:
@@ -5626,7 +5335,6 @@
     it can be applied to type of [A.f] which is ['a], to obtain type
     of [B.f] which is [int].
  </para></remarks>
-
 </member>
     <member name="M:Nemerle.Compiler.TypeInfo.NestingSubst(Nemerle.Compiler.TypeInfo)">
       <summary>
@@ -5673,7 +5381,6 @@
       <summary>
         <para>If this is a constant variant option, this method returns static class member that shall be
  used instead of calling constructor. Otherwise [null] is returned.
-
 </para>
       </summary>
     </member>
@@ -5688,7 +5395,6 @@
       <summary>
         <para>True if the type will be accessible from an external assembly.
  This depends on this type's and parent types' accessibility.
-
 </para>
       </summary>
     </member>
@@ -5704,10 +5410,8 @@
       <summary>
         <para>If this type was defined as [class Foo ('a, 'b) { ... }] then return
  type expression [Foo ('a, 'b)].
-
 </para>
       </summary> <remarks><para>Used mainly with [FreshSubst ()] or [MakeSubst ()].
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.TypeInfo.get_DeclaredTypeParametersCount" />
     <member name="P:Nemerle.Compiler.TypeInfo.DeclaredTypeParametersCount" />
@@ -5872,7 +5576,6 @@
     <member name="M:Nemerle.Compiler.ExprWalker.IsWellTyped(Nemerle.Compiler.Typedtree.TExpr)">
       <summary>
         <para>Is subexpression nave all types infered, have no unresolved and no errors
-
 </para>
       </summary>
     </member>
@@ -5922,7 +5625,6 @@
       <summary>
         <para>Pretty prints a match ('expr') { 'match_cases' } instruction.
  This is a string generating wrapper for SprintTyMatch/6.
-
 </para>
       </summary>
     </member>
@@ -5930,28 +5632,24 @@
     <member name="M:Nemerle.Compiler.PrettyPrint.SprintTyMatch(Nemerle.Core.option{Nemerle.Compiler.Typer},Nemerle.Compiler.Typedtree.TExpr,Nemerle.Core.option{System.String},Nemerle.Core.list{Nemerle.Compiler.Typedtree.Match_case},System.String,System.Text.StringBuilder)">
       <summary>
         <para>Pretty prints a match ('expr') { 'match_cases' } instruction.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.PrettyPrint.SprintTyExpr(Nemerle.Core.option{Nemerle.Compiler.Typer},Nemerle.Compiler.Typedtree.TExpr)">
       <summary>
         <para>Pretty prints a typed tree expression.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.PrettyPrint.SprintTyExpr(Nemerle.Compiler.Typedtree.TExpr)">
       <summary>
         <para>Pretty prints a typed tree expression.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.PrettyPrint.SprintTyExpr(Nemerle.Core.option{Nemerle.Compiler.Typer},Nemerle.Compiler.Typedtree.TExpr,Nemerle.Core.option{System.String},System.Boolean,System.String,System.Text.StringBuilder)">
       <summary>
         <para>Pretty prints a typed tree expression.
-
 </para>
       </summary>
     </member>
@@ -5961,14 +5659,12 @@
     <member name="M:Nemerle.Compiler.PrettyPrint.strip_nemerle_core_dot_prefix(System.String)">
       <summary>
         <para>Strips the 'Nemerle.Core.' prefix from type names
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.PrettyPrint.print_fun_typarms(Nemerle.Core.list{Nemerle.Compiler.StaticTypeVar})">
       <summary>
         <para>Prints a type parameters of a function declaration
-
 </para>
       </summary>
     </member>
@@ -6201,7 +5897,6 @@
     <member name="T:Nemerle.Compiler.FixedType">
       <summary>
         <para>Represent top-level type constructor for a given type.
-
 </para>
       </summary>
     </member>
@@ -6290,7 +5985,6 @@
       <summary>
         <para>Get type of member when referenced on value of the current type,
  which has to be fixed.
-
 </para>
       </summary>
     </member>
@@ -6298,10 +5992,8 @@
       <summary>
         <para>Returns substitution which should be applied to types of members of $from in order to get their
  instatiation in $this, like  SCG.List[int].ConstructSubstForTypeInfo (SCG.ICollection) --&gt; { T := int }
-
 </para>
       </summary> <remarks><para>It supports only FixedType.Class
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.FixedType.TypeOfMethodWithTyparms(Nemerle.Compiler.IMethod)" />
     <member name="M:Nemerle.Compiler.FixedType.TypeOfMethod(Nemerle.Compiler.IMethod)" />
@@ -6316,7 +6008,6 @@
     <member name="M:Nemerle.Compiler.FixedType.GetInstantiatedSuperType(Nemerle.Compiler.TypeInfo)">
       <summary>
         <para>Get the exact instantiation upon which [this] implements [super_type].
-
 </para>
       </summary>    <remarks><para>For example for:
       class Bar[X, Y] { }
@@ -6325,7 +6016,6 @@
       Foo[string].GetInstantiatedSuperType(Bar)
     will return:
       Bar[int, list[string]]
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.FixedType.FunReturnTypeAndParms" />
     <member name="M:Nemerle.Compiler.FixedType.FunReturnTypeAndParms(Nemerle.Compiler.IMethod)" />
@@ -6346,7 +6036,6 @@
     <member name="M:Nemerle.Compiler.FixedType._N_GetVariantCode">
       <summary>
         <para>Represent top-level type constructor for a given type.
-
 </para>
       </summary>
     </member>
@@ -6355,7 +6044,6 @@
     <member name="T:Nemerle.Compiler.FixedType.Class">
       <summary>
         <para>Represent a class type with given type parameters, like "string" or "list[int]".
-
 </para>
       </summary>
     </member>
@@ -6365,7 +6053,6 @@
       class Foo[T] { bar : list[T]; }
    The "T" in "list[T]" would be represented by a StaticTypeVarRef.
    You can get StaticTypeVar objects from the type builder of Foo class.
-
 </para>
       </summary>
     </member>
@@ -6373,21 +6060,18 @@
       <summary>
         <para>Represent a function type "from -&gt; to".
    If the function takes more than one parameter, the "from" is a tuple. */
-
 </para>
       </summary>
     </member>
     <member name="T:Nemerle.Compiler.FixedType.Tuple">
       <summary>
         <para>Represent a tuple, like "int * string * list[float]"
-
 </para>
       </summary>
     </member>
     <member name="T:Nemerle.Compiler.FixedType.Array">
       <summary>
         <para>Represent an array type, rank refers to the number of dimensions.
-
 </para>
       </summary>
     </member>
@@ -6398,7 +6082,6 @@
       foo (x : ref int) : void
    the x has type "Ref(Class(InternalType.Int32_tc,[]))".
    They are not used in function types though!
-
 </para>
       </summary>
     </member>
@@ -6406,20 +6089,16 @@
     <member name="T:Nemerle.Compiler.FixedType.Void">
       <summary>
         <para>Represent the unit type.
-
 </para>
       </summary>
     </member>
     <member name="T:Nemerle.Compiler.FixedType.Intersection">
       <summary>
         <para>Used when given value is required to have all the listed types.
-
 </para>
       </summary>       <remarks><para>Invariant 1: the types listed cannot be in the subtyping relation
        pairwise.
-
 </para>       <para>Invariant 2: there can be only Class() objects inside.
-
 </para>       <para>This type is not expressible in the .NET type system directly,
        it can be however expressed with type variable bounds in some
        cases. *
@@ -6428,10 +6107,8 @@
       <summary>
         <para>Represents a immutable typing context, corresponding to a specific
       place in the source code.
-
 </para>
       </summary>      <remarks><para>It is stored with expressions pending to be typed.
-
 </para></remarks></member>
     <member name="F:Nemerle.Compiler.LocalContext.locals" />
     <member name="F:Nemerle.Compiler.LocalContext.is_checked" />
@@ -6459,7 +6136,6 @@
       <summary>
         <para>Class provides access to CheckIntegerOverflow compilation option
         via IsChecked property.
-
 </para>
       </summary>
     </member>
@@ -6586,7 +6262,6 @@
         <para>Creates new color for execution of macro expansion, stores
         this color as top of the stack, together with [macro_use]
         as context color of currently executed macro.
-
 </para>
       </summary>
     </member>
@@ -6595,10 +6270,8 @@
       <summary>
         <para>Bring color context of previous execution of macro
         (occurs when macro expansion execution finishes).
-
 </para>
       </summary>        <remarks><para>Assumes that [PushNewColor] was called before
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.MacroColorizator.RelocateImplInternal(Nemerle.Compiler.RelocationInfo)" />
     <member name="T:Nemerle.Compiler.MacroRegistry" />
@@ -6634,7 +6307,6 @@
     <member name="M:Nemerle.Compiler.Macros.#cctor">
       <summary>
         <para>PUBLIC API FOR USAGE IN MACROS
-
 </para>
       </summary>
     </member>
@@ -6642,7 +6314,6 @@
       <summary>
         <para>generates new unique symbol, which can be safely used
       as name of quoted variables, functions, etc.
-
 </para>
       </summary>
     </member>
@@ -6652,7 +6323,6 @@
       as name of quoted variables, functions, etc.
       The [root] parameter can be used to specify a string to be
       part of the name, mostly for debugging purposes.
-
 </para>
       </summary>
     </member>
@@ -6661,7 +6331,6 @@
         <para>controlled hygiene breaking - generates symbol, which
       placed in generated code would bind to variables
       at macro-use site
-
 </para>
       </summary>
     </member>
@@ -6669,7 +6338,6 @@
       <summary>
         <para>Checks if given expression describes name of a type, like
       [System.Console] (it is a class)
-
 </para>
       </summary>
     </member>
@@ -6677,7 +6345,6 @@
       <summary>
         <para>Checks if given expression describes name of a type, like
       [System.Console] (it is a class)
-
 </para>
       </summary>
     </member>
@@ -6687,7 +6354,6 @@
         <para>Lifts given list of expressions to syntax tree of list containing
  elements, whose syntax trees are defined by those expressions.
  (expressions on the list are not lifted)
-
 </para>
       </summary>
     </member>
@@ -6697,7 +6363,6 @@
  supplied function to each of its elements. The function
  is used here to lift elements of list, so we can build
  entire syntax trees from them.
-
 </para>
       </summary>
     </member>
@@ -6735,7 +6400,6 @@
       <summary>
         <para>Lifts up [Splicable]. [Splicable.Expression] is substituted by its
       content and appropriate [Splicable.Name] expression is created.
-
 </para>
       </summary>
     </member>
@@ -6762,7 +6426,6 @@
     <member name="M:Nemerle.Compiler.Macros.quoted_ttype(Nemerle.Compiler.Parsetree.PExpr)">
       <summary>
         <para>Creates parse tree of (expression which builds) given typed type.
-
 </para>
       </summary>
     </member>
@@ -6771,7 +6434,6 @@
       <summary>
         <para>transforms given expression (which is supposed to be generated from
       quoted expression) into pattern
-
 </para>
       </summary>
     </member>
@@ -6779,7 +6441,6 @@
       <summary>
         <para>Allows recursive analysing and rewriting given parse tree expression easily. It calls supplied function on every
  node of tree returning its result as new node.
-
 </para>
       </summary> <remarks><para>[ctx] - when specified, then expression is first macro-expanded and expansion result is then further analyzed
  [expr] - expression to be processed
@@ -6787,7 +6448,6 @@
  [call] - function called for each node of tree, first parameter hold the [in_pattern] semantics; second denotes if we are calling the
           function before processing of subnodes (==false) and after (==true) - the function is always called twice for each node;
           third passes the current node to operate on; return value (used only from second/postprocess call) is used as new node value
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.Macros.RecursiveRename(Nemerle.Compiler.TypeBuilder,Nemerle.Compiler.Parsetree.PExpr,Nemerle.Compiler.Parsetree.Name,Nemerle.Compiler.Parsetree.Name)" />
     <member name="M:Nemerle.Compiler.Macros.TraverseExprWithContext(Nemerle.Core.option{Nemerle.Compiler.Typer},Nemerle.Compiler.Parsetree.PExpr,Nemerle.Compiler.TraverseContext,Nemerle.Builtins.Function{Nemerle.Compiler.TraverseContext,System.Boolean,Nemerle.Compiler.Parsetree.PExpr,Nemerle.Compiler.Parsetree.PExpr})">
@@ -6795,7 +6455,6 @@
         <para>Allows recursive analysing and rewriting given parse tree expression easily. It calls supplied function on every
  node of tree returning its result as new node. Extended context is used, it may collect full parent expression information,
  or can collect only needed nodes
-
 </para>
       </summary> <remarks><para>[ctx] - when specified, then expression is first macro-expanded and expansion result is then further analyzed
  [expr] - expression to be processed
@@ -6812,7 +6471,6 @@
           in NoSkip mode flag with traverse is continued on return expression
           if we want to traverse sub nodes, in first call (after == false) we must necesseraly return null.
           return value (used only from second/postprocess call) is used as new node value
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.Macros.get_Manager" />
     <member name="P:Nemerle.Compiler.Macros.Manager" />
@@ -6924,7 +6582,6 @@
     <member name="P:Nemerle.Compiler.OverloadPossibility.StillPossible">
       <summary>
         <para>Tell if this overload is still possible in the current solver.
-
 </para>
       </summary>
     </member>
@@ -6933,7 +6590,6 @@
     <member name="M:Nemerle.Compiler.OverloadPossibility.Compile">
       <summary>
         <para>Enforce this particular overloading possibility in the current solver.
-
 </para>
       </summary>
     </member>
@@ -6956,7 +6612,6 @@
         <para>Filter out impossible overloads from the list.  If there are no
  possible overloads and we are in the error reporting mode, present
  an appropriate error message.
-
 </para>
       </summary>
     </member>
@@ -7008,7 +6663,6 @@
     <member name="M:Nemerle.Compiler.Solver.PushState">
       <summary>
         <para>Store current constraint state.
-
 </para>
       </summary>        <remarks><para>Called before some speculative type checking fragment, like
         overload resolution.
@@ -7016,7 +6670,6 @@
     <member name="M:Nemerle.Compiler.Solver.PopState">
       <summary>
         <para>Go one constraint state back.
-
 </para>
       </summary>        <remarks><para>This function rollbacks all constraints made in current state,
         and also clear the error state if it was in
@@ -7037,14 +6690,12 @@
     <member name="M:Nemerle.Compiler.Solver.PushRank">
       <summary>
         <para>Increment current type variable rank.
-
 </para>
       </summary>        <remarks><para>Called before typing of a local function.
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.Solver.PopRank">
       <summary>
         <para>Restore previous type variable rank.
-
 </para>
       </summary>        <remarks><para>Called after typing of a local function.
 </para></remarks></member>
@@ -7122,7 +6773,6 @@
         <para>Return lower constraints on given type variable (that is the
  [where] clauses). The constraints should be already normalized (that
  is they should follow FixedType.Intersection invariants).
-
 </para>
       </summary>
     </member>
@@ -7164,7 +6814,6 @@
     <member name="M:Nemerle.Compiler.StaticTypeVar.TryCheckConstraints(Nemerle.Compiler.TypeVar,System.Object,System.Boolean)">
       <summary>
         <para>Check if [tv] fullfills [this]'s constraints.
-
 </para>
       </summary>
     </member>
@@ -7260,7 +6909,6 @@
         <para>Class containing Traverse context for current traversing expression
  </para>
       </summary>
-
 </member>
     <member name="F:Nemerle.Compiler.TraverseContext.nexpr" />
     <member name="F:Nemerle.Compiler.TraverseContext.flags" />
@@ -7271,7 +6919,6 @@
         <para>Data storage, this maybe useful if you want to save data while traversing expressions, and access it after traversing
  </para>
       </summary>
-
 </member>
     <member name="F:Nemerle.Compiler.TraverseContext.pushed" />
     <member name="M:Nemerle.Compiler.TraverseContext.Next">
@@ -7279,7 +6926,6 @@
         <para>called for next traversing, and creates new context
  </para>
       </summary>
-
 </member>
     <member name="M:Nemerle.Compiler.TraverseContext.get_IsBreaked" />
     <member name="P:Nemerle.Compiler.TraverseContext.IsBreaked">
@@ -7287,7 +6933,6 @@
         <para>Gives information that traversing is breaked
 </para>
       </summary>
-
 </member>
     <member name="M:Nemerle.Compiler.TraverseContext.get_NoSkip" />
     <member name="P:Nemerle.Compiler.TraverseContext.NoSkip">
@@ -7295,14 +6940,12 @@
         <para>No skip mode, every returned node is traversed normally, rather than skipped
 </para>
       </summary>
-
 </member>
     <member name="M:Nemerle.Compiler.TraverseContext.Push">
       <summary>
         <para>Push context manually
  </para>
       </summary>
-
 </member>
     <member name="M:Nemerle.Compiler.TraverseContext.Break">
       <summary>
@@ -7310,7 +6953,6 @@
  processed to this point
  </para>
       </summary>
-
 </member>
     <member name="M:Nemerle.Compiler.TraverseContext.#ctor(Nemerle.Compiler.TraverseContext.CommonFlags)">
       <summary>
@@ -7318,7 +6960,6 @@
  </para>
       </summary>
  <param name="full_hist"><para>indicates that need full context history saving</para></param>
-
 </member>
     <member name="M:Nemerle.Compiler.TraverseContext.#ctor(Nemerle.Compiler.TraverseStateFlag)" />
     <member name="M:Nemerle.Compiler.TraverseContext._N_GetVariantCode">
@@ -7326,7 +6967,6 @@
         <para>Class containing Traverse context for current traversing expression
  </para>
       </summary>
-
 </member>
     <member name="M:Nemerle.Compiler.TraverseContext._N_GetVariantCodeSafe(Nemerle.Compiler.TraverseContext)" />
     <member name="M:Nemerle.Compiler.TraverseContext._N_GetVariantCodeObject(System.Object)" />
@@ -7336,19 +6976,16 @@
         <para>top context, in begin of traversing process
  </para>
       </summary>
-
 </member>
     <member name="T:Nemerle.Compiler.TraverseContext.Uncached">
       <summary>
         <para>not saved context, in manual mode (see TraverseExprWithContext comments), when not manual saved
  </para>
       </summary>
-
 </member>
     <member name="T:Nemerle.Compiler.TraverseContext.Expr">
       <summary>
       </summary>
-
 </member>
     <member name="T:Nemerle.Compiler.TraverseContext.CommonFlags" />
     <member name="T:Nemerle.Compiler.Typedtree.TypeDeclaration" />
@@ -7490,14 +7127,12 @@
     <member name="F:Nemerle.Compiler.Typedtree.TFunHeader.closure_vars">
       <summary>
         <para>local values defined in this function, which are closurised (used by children)
-
 </para>
       </summary>
     </member>
     <member name="F:Nemerle.Compiler.Typedtree.TFunHeader.decl">
       <summary>
         <para>local value, which is declaring this function (valid for local funs)
-
 </para>
       </summary>
     </member>
@@ -7517,7 +7152,6 @@
       <summary>
         <para>Retrieves functions in which current function is nested. Empty list if
   this is a plain method of some class.
-
 </para>
       </summary>
     </member>
@@ -7544,19 +7178,14 @@
     <member name="M:Nemerle.Compiler.Typedtree.Pattern.Walk(Nemerle.Builtins.Function{Nemerle.Compiler.Typedtree.Pattern,Nemerle.Compiler.Typedtree.Pattern})">
       <summary>
         <para>Walk [this] with the function [f].
-
 </para>
       </summary>        <remarks><para>The function is applied to each and every pattern node.
-
 </para>        <para>If [f] returns a value different than [null], the value is
         returned, from this [Walk] function.
-
 </para>        <para>If it returns [null], the walking function descends into tree
         elements in a map-like fashion.
-
 </para>        <para>If the type of pattern returned was to be [null], it is set to
         the type of the original pattern.
-
 </para>        <para>This function implements the visitor pattern.
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.Typedtree.Pattern.ToString" />
@@ -7685,19 +7314,14 @@
     <member name="M:Nemerle.Compiler.Typedtree.TExpr.Walk(Nemerle.Builtins.Function{Nemerle.Compiler.Typedtree.TExpr,Nemerle.Compiler.Typedtree.TExpr})">
       <summary>
         <para>Walk [this] with the function [f].
-
 </para>
       </summary>        <remarks><para>The function is applied to each and every expression node.
-
 </para>        <para>If [f] returns a value different than [null], the value is
         returned, from this [Walk] function.
-
 </para>        <para>If it returns [null], the walking function descends into tree
         elements in a map-like fashion.
-
 </para>        <para>If the type of expression returned was to be [null], it is set
         to the type of the original expression.
-
 </para>        <para>This function implements the visitor pattern.
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.Typedtree.TExpr.BoolLiteral(Nemerle.Compiler.ManagerClass,System.Boolean)" />
@@ -7917,7 +7541,6 @@
     <member name="M:Nemerle.Compiler.Typer.InitLocalContext(Nemerle.Compiler.LocalContext)">
       <summary>
         <para>Init local_context and copy parameters into it.
-
 </para>
       </summary>
     </member>
@@ -7950,13 +7573,10 @@
         take one boolean parameter, when it is true, you should fail with a
         descriptive error message stating that more typing information is needed.
         If it is false, you should just return None ().
-
 </para>
       </summary>        <remarks><para>For example:
-
 </para>        <para>macro foo (x) {
           def x' = Macros.ImplicitCTX ().TypeExpr (x);
-
 </para>          <para>Macros.ImplicitCTX ().DelayMacro (fun (fail_loudly) {
             match (x'.Type.Hint) {
               | Some (t) =&gt;
@@ -7969,10 +7589,8 @@
             }
           })
         }
-
 </para>        <para>This function will first try to call your resolution function and only if
         it fails, it will get queued for later.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.Typer.TransformWhenAllTypesWouldBeInfered(Nemerle.Builtins.Function{Nemerle.Compiler.Parsetree.PExpr,Nemerle.Compiler.Typedtree.TExpr,Nemerle.Compiler.Parsetree.PExpr},Nemerle.Compiler.Typedtree.TExpr,Nemerle.Compiler.Parsetree.PExpr)">
       <summary>
@@ -7980,7 +7598,6 @@
  delay typing action will be resolved. Do transformation after that.
  If nested subexpressions contains fesh (not inferred) types,
  typing errors or delay typing action the transformation not do.
-
 </para>
       </summary>
     </member>
@@ -7989,16 +7606,13 @@
       <summary>
         <para>Filter out wrong nodes, and if more then one left -- make the
         [Overloaded] node, and register it.  Removes duplicates.
-
 </para>
       </summary>        <remarks><para>Wrong node is not [StillPossible] node, or one type of which
         cannot unify with [expected].
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.Typer.TryTyping(Nemerle.Builtins.Function{Nemerle.Compiler.Typedtree.TExpr})">
       <summary>
         <para>Run given typing action, without possiblity of any error messages.
-
 </para>
       </summary>
     </member>
@@ -8009,7 +7623,6 @@
         <para>Check if [e] is an l-value, and if not display an error message
         mentioning [desc]. Additionally is [need_ref] require location of
         the expression to be known (i.e. no properties and indexers).
-
 </para>
       </summary>
     </member>
@@ -8023,7 +7636,6 @@
     <member name="M:Nemerle.Compiler.Typer.CanBeTypeName(Nemerle.Compiler.Parsetree.PExpr)">
       <summary>
         <para>Heuristics to decide how we treat rhs of 'is' operator: type or pattern
-
 </para>
       </summary>
     </member>
@@ -8035,14 +7647,12 @@
     <member name="M:Nemerle.Compiler.Typer.TryExtractFunType(Nemerle.Core.option{Nemerle.Compiler.FixedType})">
       <summary>
         <para>Returns: delegateTyInf expressinTreeTyInf * fromTyInf * toTyInf for ty or nulls.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.Typer.NonLiteralCast(Nemerle.Compiler.Typedtree.TExpr,Nemerle.Compiler.TypeVar,System.Boolean@,System.Boolean)">
       <summary>
         <para>Returns null if has no cast
-
 </para>
       </summary>
     </member>
@@ -8051,7 +7661,6 @@
     <member name="M:Nemerle.Compiler.Typer.TryResolveNestedDelayedTyping(Nemerle.Core.list{Nemerle.Compiler.Typedtree.TExpr},System.Boolean@,System.Boolean)">
       <summary>
         <para>Returns true if no error. This method does not guarantee absence the unresolved delayed typind.
-
 </para>
       </summary>
     </member>
@@ -8162,7 +7771,6 @@
  For example, if we have ? -&gt; ? and (? * ?) -&gt; ? overloads and argument list
  [?] this function prefer first overload (? -&gt; ?) because overload (? * ?) -&gt; ?
  demand of convertion from ? to ? * ?.
-
 </para>
       </summary>
     </member>
@@ -8180,7 +7788,6 @@
     <member name="M:Nemerle.Compiler.Typer.GetBestOverloadsWithoutImplicitConversions(Nemerle.Core.list{Nemerle.Compiler.IMethod})">
       <summary>
         <para>it won't work with named parameters
-
 </para>
       </summary>
     </member>
@@ -8213,7 +7820,6 @@
     <member name="F:Nemerle.Compiler.ExtensionPattern._N_Temporary_18135">
       <summary>
         <para>Must be removed before build type tree.
-
 </para>
       </summary>
     </member>
@@ -8221,7 +7827,6 @@
     <member name="P:Nemerle.Compiler.ExtensionPattern.Temporary">
       <summary>
         <para>Must be removed before build type tree.
-
 </para>
       </summary>
     </member>
@@ -8364,16 +7969,13 @@
     <member name="M:Nemerle.Compiler.TypeVar.Require(Nemerle.Compiler.TypeVar)">
       <summary>
         <para>Require [this] to be at least [t].
-
 </para>
       </summary>   <remarks><para>To be called when we require some lower constraint on type
    variable.  Return [true] if it's possible.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.TypeVar.TryRequire(Nemerle.Compiler.TypeVar)">
       <summary>
         <para>Check [this] to be subtype of [t].
-
 </para>
       </summary>
     </member>
@@ -8382,43 +7984,35 @@
         <para>This is much like [assert(Require (t))], but is executed regardless
  of asserts and ignores the result if there was already a
  [LocalError].
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypeVar.Require(Nemerle.Compiler.FixedType)">
       <summary>
         <para>Require [this] to be at least [t].
-
 </para>
       </summary> <remarks><para>To be called when we require some lower constraint on type
  variable.  Return [true] iff it's possible.
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.TypeVar.Provide(Nemerle.Compiler.TypeVar)">
       <summary>
         <para>Provide type [t] as the maximal type for [this].
-
 </para>
       </summary> <remarks><para>To be called when value of type [t] is assigned to cell of type
  [this]. Dual to [Require].
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.TypeVar.TryProvide(Nemerle.Compiler.TypeVar)" />
     <member name="M:Nemerle.Compiler.TypeVar.ForceProvide(Nemerle.Compiler.TypeVar)" />
     <member name="M:Nemerle.Compiler.TypeVar.Provide(Nemerle.Compiler.FixedType)">
       <summary>
         <para>Provide type [t] as the maximal type for [this].
-
 </para>
       </summary> <remarks><para>To be called when value of type [t] is assigned to cell of type
  [this]. Dual to [Require].
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.TypeVar.Unify(Nemerle.Compiler.TypeVar)">
       <summary>
         <para>Make sure [t] and [this] will from now on always represent the same type.
-
 </para>
       </summary>
     </member>
@@ -8426,7 +8020,6 @@
     <member name="M:Nemerle.Compiler.TypeVar.Unify(Nemerle.Compiler.FixedType)">
       <summary>
         <para>Make sure [t] and [this] will from now on always represent the same type.
-
 </para>
       </summary>
     </member>
@@ -8474,7 +8067,6 @@
       <summary>
         <para>Fix the type to be [LowerBound], so it won't change anymore.
  Don't use this function unless absolutely necessary.
-
 </para>
       </summary>
     </member>
@@ -8487,14 +8079,12 @@
     <member name="M:Nemerle.Compiler.TypeVar.GetSystemType">
       <summary>
         <para>Don't use this method in macros!
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypeVar.GetNonVoidSystemType">
       <summary>
         <para>Don't use this method in macros!
-
 </para>
       </summary>
     </member>
@@ -8572,14 +8162,12 @@
     <member name="M:Nemerle.Compiler.TypeVar._N__FT_Unify_3997(Nemerle.Compiler.TypeVar)">
       <summary>
         <para>Make sure [t] and [this] will from now on always represent the same type.
-
 </para>
       </summary>
     </member>
     <member name="M:Nemerle.Compiler.TypeVar._N__FT_Unify_3998(Nemerle.Compiler.FixedType)">
       <summary>
         <para>Make sure [t] and [this] will from now on always represent the same type.
-
 </para>
       </summary>
     </member>
@@ -8588,7 +8176,6 @@
       <summary>
         <para>Fix the type to be [LowerBound], so it won't change anymore.
  Don't use this function unless absolutely necessary.
-
 </para>
       </summary>
     </member>
@@ -8620,13 +8207,11 @@
         type constructors in given global environment (with accessibility
         information implied by given current TypeInfo) and type variables
         in current instance.
-
 </para>
       </summary>        <remarks><para>If [check_parms] is true, then we check if type substituted for
         a given type variable conforms to all of its constraints. It
         should be true in general, but is false when we don't know the
         subtyping relations yet (during scanning of global types).
-
 </para></remarks></member>
     <member name="M:Nemerle.Compiler.TypeVarEnv.SetTypedObjects(Nemerle.Compiler.Parsetree.PExpr,Nemerle.Compiler.NamespaceTree.Node)" />
     <member name="M:Nemerle.Compiler.TypeVarEnv.SetTypedObjects(Nemerle.Compiler.Parsetree.PExpr,Nemerle.Compiler.TypeVar)" />

@@ -1,4 +1,5 @@
-﻿using Furesoft.Web;
+﻿using System;
+using Furesoft.Web;
 using Mono.Net;
 using System.IO;
 
@@ -6,6 +7,11 @@ namespace PHP
 {
     public class Language : IScriptLanguage
     {
+        public override void Execute(string src, Uri uri, HttpListenerContext p, WebConfig wc, StreamWriter sw)
+        {
+            
+        }
+
         public override string Name
         {
             get
@@ -22,8 +28,5 @@ namespace PHP
             }
         }
 
-        public override void Execute(string src, HttpListenerContext p, WebConfig wc, StreamWriter sw)
-        {
-        }
     }
 }

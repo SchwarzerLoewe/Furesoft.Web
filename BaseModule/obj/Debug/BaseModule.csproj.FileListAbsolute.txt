@@ -1,0 +1,5 @@
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\BaseModule\bin\Debug\BaseModule.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\BaseModule\bin\Debug\BaseModule.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\BaseModule\obj\Debug\BaseModule.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\BaseModule\obj\Debug\BaseModule.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\BaseModule\obj\Debug\BaseModule.csprojResolveAssemblyReference.cache

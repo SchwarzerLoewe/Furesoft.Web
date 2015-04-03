@@ -7,11 +7,11 @@ namespace VBScript
 {
     public class Language : IScriptLanguage
     {
-        public override void Execute(string src, HttpListenerContext p, WebConfig wc, StreamWriter sw)
+        public override void Execute(string src, Uri uri, HttpListenerContext p, WebConfig wc, StreamWriter sw)
         {
             VBScript.VBScriptEngine engine = new VBScriptEngine();
 
-            var sapi = new StandardScriptApi(p, sw);
+            var sapi = new StandardScriptApi(uri, p, sw);
 
             engine.Add("require", new Action<string>(pa => engine.Execute(File.ReadAllText(pa))));
             engine.Add("eval", new Func<string, object>(pa => engine.Evaluate(pa)));
@@ -42,7 +42,7 @@ namespace VBScript
         {
             get
             {
-                return ".vbsa";
+                return ".vbs";
             }
         }
     }

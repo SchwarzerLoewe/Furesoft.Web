@@ -17,3 +17,15 @@ C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Nemerle\bin\Debug\Nemerle.xml
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Nemerle\bin\Debug\Nemerle.Compiler.xml
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Nemerle\obj\Debug\Nemerle.dll
 C:\Users\filmee24\ownCloud\Projects\Furesoft.Web\Nemerle\obj\Debug\Nemerle.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Nemerle\bin\Debug\Nemerle.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Nemerle\bin\Debug\Nemerle.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Nemerle\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Nemerle\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Nemerle\bin\Debug\Nemerle.Compiler.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Nemerle\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Nemerle\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Nemerle\bin\Debug\Nemerle.xml
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Nemerle\bin\Debug\Nemerle.Compiler.xml
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Nemerle\obj\Debug\Nemerle.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Nemerle\obj\Debug\Nemerle.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\Nemerle\obj\Debug\Nemerle.pdb

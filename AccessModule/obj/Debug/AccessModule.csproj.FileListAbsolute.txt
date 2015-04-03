@@ -1,0 +1,9 @@
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\AccessModule\bin\Debug\AccessModule.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\AccessModule\bin\Debug\AccessModule.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\AccessModule\bin\Debug\Furesoft.Web.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\AccessModule\bin\Debug\Mono.Net.HttpListener.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\AccessModule\bin\Debug\Mono.Security.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\AccessModule\bin\Debug\Furesoft.Web.pdb
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\AccessModule\obj\Debug\AccessModule.csprojResolveAssemblyReference.cache
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\AccessModule\obj\Debug\AccessModule.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\AccessModule\obj\Debug\AccessModule.pdb
