@@ -27,6 +27,7 @@ namespace Furesoft.Web.Internal
             this.dir = dir;
 
             Deny = new List<string>();
+            IndexIgnore = new List<string>();
             AuthName = "";
             AuthType = "";
             AuthUserFile = "";

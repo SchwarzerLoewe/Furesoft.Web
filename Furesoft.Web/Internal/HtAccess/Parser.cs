@@ -51,7 +51,7 @@ namespace Furesoft.Web.Internal.HtAccess
                             {
                                 var v = (List<string>)prop.GetValue(o);
 
-                                v.AddRange(p.Values.Cast<string>());
+                                v.AddRange(p.Values.Cast<string>().ToList());
 
                                 prop.SetValue(o, v);
                             }
@@ -178,7 +178,7 @@ namespace Furesoft.Web.Internal.HtAccess
                             }
                         }
 
-                        dir.Values = args.ToArray();
+                        dir.Values = args.Cast<string>().ToArray();
 
                         if (block != null)
                         {

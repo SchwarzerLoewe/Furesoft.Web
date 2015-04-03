@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using Furesoft.Web.Internal;
 using Furesoft.Web.Properties;
@@ -23,7 +24,8 @@ namespace Furesoft.Web
 
         string folderItem = "<tr><td><a href='{{Path}}/{{folder}}'>{{folder}}</a></td><td align='right'>{{Size}}  </td></tr>";
         string fileItem = "<tr><td><a href='{{Path}}/{{File}}'>{{File}}</a></td><td align='right'>{{Size}}  </td></tr>";
-        
+        string parentItem = "<tr><td><a href='{{ParentFolder}}'>Parent Directory</a></td><td>&nbsp;</td><td align='right'>  - </td><td>&nbsp;</td></tr>";
+
         public void Render(StreamWriter sw)
         {
             string content = Resources.Listing;
@@ -39,6 +41,11 @@ namespace Furesoft.Web
 
             var sb = new StringBuilder();
 
+            var pdi = new DirectoryInfo(_fi.ToString());
+            parentItem = parentItem.Replace("{{ParentFolder}}", "..");
+
+            sb.AppendLine(parentItem);
+
             foreach (var folder in Directory.GetDirectories(_fi.ToString()))
             {
                 var di = new DirectoryInfo(folder);
@@ -50,12 +57,32 @@ namespace Furesoft.Web
             {
                 var fi = new FileInfo(file);
 
+                if (isIgnored(fi.Name))
+                    continue;
+
                 sb.AppendLine(fileItem.Replace("{{File}}", fi.Name).Replace("{{Size}}", SizeFormatter.Format(fi.Length, 2)));
             }
 
             content = content.Replace("{{Items}}", sb.ToString());
 
             sw.WriteLine(content);
+        }
+
+        private bool isIgnored(string name)
+        {
+            foreach (var item in _ac.IndexIgnore)
+            {
+                string n = item;
+                if(item.StartsWith("*"))
+                {
+                    n = n.Replace(".", "\\.").Replace("*", ".");
+                }
+
+                if (Regex.IsMatch(name, n))
+                    return true;
+            }
+
+            return false;
         }
     }
 }
