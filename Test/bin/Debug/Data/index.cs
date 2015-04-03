@@ -18,6 +18,7 @@ public class Home : Page {
         var buff = new Uri("http://dotnet-snippets.de/images/user/nopic.png").FromWeb();
 
         var canvas = new DynamicImage(100, 100);
+        canvas.Name = "dynamic";
         canvas.FillRectangle(new Rectangle(10, 10, 10, 10), Color.Green);
 
         var img = new Img();

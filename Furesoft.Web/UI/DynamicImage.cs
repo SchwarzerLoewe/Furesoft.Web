@@ -28,9 +28,17 @@ namespace Furesoft.Web.UI
         {
             _gr.DrawRectangle(new Pen(color), rec);
         }
+        public void DrawImage(Point pos, Image img)
+        {
+            _gr.DrawImage(img, pos);
+        }
         public void FillRectangle(Rectangle rec, Color color)
         {
             _gr.FillRectangle(new SolidBrush(color), rec);
+        }
+        public void Clear(Color c)
+        {
+            _gr.Clear(c);
         }
 
         public static implicit operator string(DynamicImage btn)
