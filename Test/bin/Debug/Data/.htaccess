@@ -6,6 +6,7 @@ DirectoryIndex "index.html"
 #AddType CSharp .cse
 
 IndexIgnore *.bmp
+Options All -Indexes
 
 RewriteEngine Off
 RewriteRule ^/(\w+)/*$ ./index.cs?$1

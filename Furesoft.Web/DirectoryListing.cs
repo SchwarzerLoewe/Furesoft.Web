@@ -28,11 +28,17 @@ namespace Furesoft.Web
 
         public void Render(StreamWriter sw)
         {
+            if(!isListing()) {
+                //ToDo: send access forbidden error
+                sw.WriteLine("Access forbidden");
+
+                return;
+            }
+
             string content = Resources.Listing;
 
             var dict = new Dictionary<string, object>();
             dict.Add("Folder", _p.Request.Url.LocalPath);
-            dict.Add("ListingPath", "http://" + Application.StartupPath + "\\Listing\\");
             dict.Add("Path", _p.Request.Url.AbsoluteUri);
 
             content = Template.Render(content, dict);
@@ -83,6 +89,25 @@ namespace Furesoft.Web
             }
 
             return false;
+        }
+        private bool isListing()
+        {
+            foreach (var o in _ac.Options)
+            {
+                if (o.Key == "All")
+                {
+                    if (o.Value == "-Indexes")
+                    {
+                        return false;
+                    }
+                    else if (o.Value == "+Indexes")
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return true;
         }
     }
 }
