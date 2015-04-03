@@ -1,5 +1,4 @@
 ﻿using Furesoft.Web.Internal;
-using Furesoft.Web.ScriptingTypes;
 using Mono.Net;
 using System;
 using System.Collections.Generic;
@@ -33,7 +32,7 @@ namespace Furesoft.Web
             Variables.Add("OutputStream", sw);
             Variables.Add("_GET", Get.Create(uri));
 
-            Types.Add("XmlHttpRequest", typeof(XmlHttpRequest));
+            //Types.Add("XmlHttpRequest", typeof(XmlHttpRequest));
             Types.Add("Map", typeof(Map));
         }
   

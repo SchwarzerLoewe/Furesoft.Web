@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Net;
 
-namespace Furesoft.Web.ScriptingTypes
+namespace Furesoft.Web
 {
     public class XmlHttpRequest
     {
