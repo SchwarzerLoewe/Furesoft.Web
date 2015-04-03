@@ -9,5 +9,6 @@ namespace Furesoft.Web
         public List<IScriptLanguage> ScriptingLanguages = new List<IScriptLanguage>();
         public int Port;
         public string IPAddress;
+        public string ConfigPath = "\\Config\\";
     }
 }

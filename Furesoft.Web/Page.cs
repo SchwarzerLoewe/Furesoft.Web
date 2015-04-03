@@ -13,6 +13,11 @@ namespace Furesoft.Web
         public Predicate<object> Isset;
         public Map Get;
 
+        public Page NewPage()
+        {
+            return new DynamicPage();
+        }
+
         public abstract void OnLoad();
     }
 }
