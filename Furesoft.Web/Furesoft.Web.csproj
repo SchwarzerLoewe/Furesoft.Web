@@ -143,6 +143,7 @@
     <Compile Include="ConverterExtensions.cs" />
     <Compile Include="UI\Base\HtmlBuilder.cs" />
     <Compile Include="UI\Base\UiElement.cs" />
+    <Compile Include="UI\Body.cs" />
     <Compile Include="UI\Textbox.cs" />
     <Compile Include="UI\DynamicImage.cs" />
     <Compile Include="UI\Img.cs" />

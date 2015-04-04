@@ -33,6 +33,11 @@ namespace Furesoft.Web.UI
                     {
                         ret.FillRectangle(new Rectangle(toint(el, "x"), toint(el, "y"), toint(el, "width"), toint(el, "heigth")), Color.FromName(el.Attributes["color"].Value));
                     }
+                    else if (el.Name == "img")
+                    {
+                        ret.DrawImage(new Point(toint(el, "x"), toint(el, "y")), el.Attributes["src"].Value);
+                    }
+                    
                 }
 
                 return ret;
@@ -63,6 +68,11 @@ namespace Furesoft.Web.UI
         {
             _gr.DrawImage(img, pos);
         }
+        public void DrawImage(Point pos, string img)
+        {
+            _gr.DrawImage(img.FromWebString(), pos);
+        }
+
         public void FillRectangle(Rectangle rec, Color color)
         {
             _gr.FillRectangle(new SolidBrush(color), rec);

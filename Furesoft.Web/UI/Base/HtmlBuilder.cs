@@ -74,7 +74,7 @@ namespace Furesoft.Web.UI.Base
                     return "";
                 }
 
-                return sb.ToString();
+                return UiElement.Tidy(sb.ToString());
             }
 
             return string.Empty;
