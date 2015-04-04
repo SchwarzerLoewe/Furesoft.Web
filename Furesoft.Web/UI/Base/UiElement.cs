@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Linq;
 
 namespace Furesoft.Web.UI.Base
 {
@@ -13,6 +14,19 @@ namespace Furesoft.Web.UI.Base
         public UiElement()
         {
             Style = new Style();
+        }
+
+        public static string Tidy(string xml)
+        {
+            try
+            {
+                XDocument doc = XDocument.Parse(xml);
+                return doc.ToString();
+            }
+            catch (Exception)
+            {
+                return xml;
+            }
         }
     }
 }

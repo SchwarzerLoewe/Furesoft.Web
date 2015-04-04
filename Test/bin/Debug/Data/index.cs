@@ -22,11 +22,15 @@ public class Home : Page {
         var buff = new Uri("http://dotnet-snippets.de/images/user/nopic.png").FromWeb();
 
         var canvas = new DynamicImage(100, 100);
-        canvas.FillRectangle(new Rectangle(10, 10, 10, 10), Color.Green);
+        canvas.FillRectangle(new Rectangle(20, 20, 50, 50), Color.Green);
+
+        string ci = "<image width='100' height='100'><rec color='Blue' x='20' y='20' width='50' heigth='50' /></image>";
+        canvas = DynamicImage.FromXml(ci);
 
         var img = new Img();
         img.Src = Converter.ToWebString(buff, ImageFormat.Png);
-        img.Style.Append("margin", "10");
+        img.Style.Append("margin-right", "50%");
+        img.Style.Append("margin-left", "50%");
 
         btn.Inner = img;
 
@@ -34,8 +38,8 @@ public class Home : Page {
         div.Name = "divcontainer";
 
         div.Style.Append("background-image", "url(" + canvas + ")");
-        div.Style.Append("height", "250");
-        div.Style.Append("width", "450");
+        div.Style.Append("height", "100%");
+        div.Style.Append("width", "100%");
 
         div.Inner += btn;
         div.Inner += b;

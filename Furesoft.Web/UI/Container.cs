@@ -12,7 +12,7 @@ namespace Furesoft.Web.UI
 
         public override string ToString()
         {
-            return HtmlBuilder.Build(this, false, "div", null);
+            return Tidy(HtmlBuilder.Build(this, true, "div", null));
         }
     }
 }

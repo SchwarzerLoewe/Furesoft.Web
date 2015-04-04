@@ -142,3 +142,46 @@
 04.04.2015 12:22:50: request /index.cs
 04.04.2015 12:22:50: CSharp Script executed
 04.04.2015 12:23:12: request /index.cs
+04.04.2015 12:29:08: request /index.cs
+04.04.2015 12:29:09: CSharp Script executed
+04.04.2015 12:29:43: request /index.cs
+04.04.2015 12:29:43: CSharp Script executed
+04.04.2015 12:36:54: request /index.cs
+04.04.2015 12:36:55: CSharp Script executed
+04.04.2015 12:37:48: request /index.cs
+04.04.2015 12:37:49: CSharp Script executed
+04.04.2015 12:44:41: request /index.cs
+04.04.2015 12:44:41: 30: 'Furesoft.Web.UI.Style' enthält keine Definition für 'margin', und es konnte keine Erweiterungsmethode 'margin' gefunden werden, die ein erstes Argument vom Typ 'Furesoft.Web.UI.Style' akzeptiert (Fehlt eine Using-Direktive oder ein Assemblyverweis?).
+04.04.2015 12:45:25: request /index.cs
+04.04.2015 12:45:25: 0: Der vordefinierte Typ 'Microsoft.CSharp.RuntimeBinder.Binder' ist nicht definiert oder importiert.
+04.04.2015 12:45:46: request /index.cs
+04.04.2015 12:45:46: CSharp Script executed
+04.04.2015 12:46:08: request /index.cs
+04.04.2015 12:46:08: CSharp Script executed
+04.04.2015 12:49:30: request /index.cs
+04.04.2015 12:49:31: CSharp Script executed
+04.04.2015 12:50:03: request /index.cs
+04.04.2015 12:50:04: CSharp Script executed
+04.04.2015 12:50:39: request /include/test
+04.04.2015 12:50:40: <h1>Error 404</h1>
+04.04.2015 12:50:53: request /include/test
+04.04.2015 12:50:53: <h1>Error 404</h1>
+04.04.2015 12:50:58: request /include/test
+04.04.2015 12:50:58: <h1>Error 404</h1>
+04.04.2015 12:52:33: request /index.cs
+04.04.2015 12:52:33: CSharp Script executed
+04.04.2015 12:53:03: request /index.cs
+04.04.2015 12:53:03: CSharp Script executed
+04.04.2015 12:53:19: request /index.cs
+04.04.2015 12:53:20: CSharp Script executed
+04.04.2015 12:53:32: request /index.cs
+04.04.2015 12:53:33: CSharp Script executed
+04.04.2015 12:54:03: request /index.cs
+04.04.2015 12:54:03: CSharp Script executed
+04.04.2015 12:55:23: request /index.cs
+04.04.2015 12:55:23: CSharp Script executed
+04.04.2015 13:07:58: request /index.cs
+04.04.2015 13:08:54: request /index.cs
+04.04.2015 13:09:38: request /index.cs
+04.04.2015 13:09:38: CSharp Script executed
+04.04.2015 13:10:15: request /index.cs

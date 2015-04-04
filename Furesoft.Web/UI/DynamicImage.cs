@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Xml;
 using Furesoft.Web.UI.Base;
 
 namespace Furesoft.Web.UI
@@ -12,6 +13,29 @@ namespace Furesoft.Web.UI
 
         private Bitmap _buffer;
         private Graphics _gr;
+
+        public static DynamicImage FromXml(string src)
+        {
+            var doc = new XmlDocument();
+            doc.LoadXml(src);
+
+            if (doc.DocumentElement.Name == "image")
+            {
+                var ret = new DynamicImage(int.Parse(doc.DocumentElement.Attributes["width"].Value), int.Parse(doc.DocumentElement.Attributes["height"].Value));
+
+                foreach (XmlNode el in doc.ChildNodes)
+                {
+                    if (el.Name == "rec")
+                    {
+                        ret.DrawRectangle(new Rectangle(int.Parse(el.Attributes["x"].Value),int.Parse(el.Attributes["x"].Value),int.Parse(el.Attributes["width"].Value),int.Parse(el.Attributes["heigth"].Value)), Color.FromName(el.Attributes["color"].Value));
+                    }
+                }
+
+                return ret;
+            }
+
+            return null;
+        }
 
         public DynamicImage(int width, int height)
         {

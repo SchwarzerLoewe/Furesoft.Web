@@ -17,9 +17,8 @@ namespace Furesoft.Web.UI
         {
             var d = new Dictionary<string, string>();
             d.Add("type", "submit");
-            d.Add("text", Text);
 
-            return HtmlBuilder.Build(this, false, "input", d);
+            return Tidy(HtmlBuilder.Build(this, false, "input", d));
         }
     }
 }
