@@ -20,7 +20,7 @@ public class Home : Page {
         var img = new Img();
         img.Src = Converter.ToWebString(buff, ImageFormat.Png);
         img.Style.Append("margin-right", "25%");
-        img.Style.Append("margin-left", "25%");
+        img.Style.Append("margin-bottom", "12%");
 
         canvas.DrawImage(new Point(0, 0), img.Src);
 
@@ -29,10 +29,8 @@ public class Home : Page {
 
         div.Style.Append("background-image", "url(" + canvas + ")");
         div.Style.Append("background-repeat", "no-repeat");
-        div.Style.Append("height", "100%");
-        div.Style.Append("width", "100%");
-
-        div.Inner = img;
+        div.Style.Append("height", "150");
+        div.Style.Append("width", "150");
 
         body.Inner = div;
 

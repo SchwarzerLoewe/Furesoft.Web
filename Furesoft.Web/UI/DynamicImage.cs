@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Drawing;
 using System.Drawing.Imaging;
+using System.Text;
 using System.Xml;
-using Furesoft.Web.UI.Base;
 
 namespace Furesoft.Web.UI
 {
@@ -36,6 +36,14 @@ namespace Furesoft.Web.UI
                     else if (el.Name == "img")
                     {
                         ret.DrawImage(new Point(toint(el, "x"), toint(el, "y")), el.Attributes["src"].Value);
+                    }
+                    else if (el.Name == "ell")
+                    {
+                        ret.DrawEllipse(new Rectangle(toint(el, "x"), toint(el, "y"), toint(el, "width"), toint(el, "heigth")), Color.FromName(el.Attributes["color"].Value));
+                    }
+                    else
+                    {
+                        throw new XmlException("XmlTag not found: " + el.Name);
                     }
                     
                 }
@@ -80,6 +88,10 @@ namespace Furesoft.Web.UI
         public void Clear(Color c)
         {
             _gr.Clear(c);
+        }
+        public void DrawEllipse(Rectangle rec, Color color)
+        {
+            _gr.DrawEllipse(new Pen(color), rec);
         }
 
         public static implicit operator string(DynamicImage btn)

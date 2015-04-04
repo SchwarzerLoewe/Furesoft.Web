@@ -1,1 +1,1 @@
-implement errorPRovider to get all error pages in all classes
+implement htaccess builder
