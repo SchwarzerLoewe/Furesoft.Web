@@ -11,7 +11,7 @@ namespace Furesoft.Web.UI
         public int Width { get; private set; }
         public int Heigth { get; private set; }
 
-        private Bitmap _buffer;
+        private Image _buffer;
         private Graphics _gr;
 
         public static DynamicImage FromXml(string src)
@@ -23,11 +23,15 @@ namespace Furesoft.Web.UI
             {
                 var ret = new DynamicImage(int.Parse(doc.DocumentElement.Attributes["width"].Value), int.Parse(doc.DocumentElement.Attributes["height"].Value));
 
-                foreach (XmlNode el in doc.ChildNodes)
+                foreach (XmlNode el in doc.DocumentElement.ChildNodes)
                 {
                     if (el.Name == "rec")
                     {
-                        ret.DrawRectangle(new Rectangle(int.Parse(el.Attributes["x"].Value),int.Parse(el.Attributes["x"].Value),int.Parse(el.Attributes["width"].Value),int.Parse(el.Attributes["heigth"].Value)), Color.FromName(el.Attributes["color"].Value));
+                        ret.DrawRectangle(new Rectangle(toint(el, "x"), toint(el, "y"), toint(el, "width"), toint(el, "heigth")), Color.FromName(el.Attributes["color"].Value));
+                    }
+                    else if (el.Name == "frec")
+                    {
+                        ret.FillRectangle(new Rectangle(toint(el, "x"), toint(el, "y"), toint(el, "width"), toint(el, "heigth")), Color.FromName(el.Attributes["color"].Value));
                     }
                 }
 
@@ -35,6 +39,11 @@ namespace Furesoft.Web.UI
             }
 
             return null;
+        }
+
+        private static int toint(XmlNode node, string name)
+        {
+            return int.Parse(node.Attributes[name].Value);
         }
 
         public DynamicImage(int width, int height)
@@ -70,7 +79,7 @@ namespace Furesoft.Web.UI
 
         public override string ToString()
         {
-            var Src = Converter.ToWebString(_buffer, ImageFormat.Bmp);
+            var Src = Converter.ToWebString(_buffer, ImageFormat.Png);
 
             return Src;
         }

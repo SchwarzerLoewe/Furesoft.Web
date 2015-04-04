@@ -14,6 +14,7 @@ public class Home : Page {
 		btn.Href = "../include/test";
 		btn.Style.Append("text-decoration", "none");
 		btn.Style.Append("color", "#DC143C");
+        btn.Visible = false;
 
         var b = new Button();
         b.Name = "hello";
@@ -24,13 +25,13 @@ public class Home : Page {
         var canvas = new DynamicImage(100, 100);
         canvas.FillRectangle(new Rectangle(20, 20, 50, 50), Color.Green);
 
-        string ci = "<image width='100' height='100'><rec color='Blue' x='20' y='20' width='50' heigth='50' /></image>";
+        string ci = "<image width='100' height='100'><frec color='Green' x='0' y='0' width='90' heigth='90' /><frec color='Blue' x='20' y='20' width='50' heigth='50' /></image>";
         canvas = DynamicImage.FromXml(ci);
 
         var img = new Img();
         img.Src = Converter.ToWebString(buff, ImageFormat.Png);
-        img.Style.Append("margin-right", "50%");
-        img.Style.Append("margin-left", "50%");
+        img.Style.Append("margin-right", "25%");
+        img.Style.Append("margin-left", "25%");
 
         btn.Inner = img;
 

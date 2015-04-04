@@ -10,10 +10,12 @@ namespace Furesoft.Web.UI.Base
         public string Class { get; set; }
         public string Id { get; set; }
         public string Inner { get; set; }
+        public bool Visible { get; set; }
 
         public UiElement()
         {
             Style = new Style();
+            Visible = true;
         }
 
         public static string Tidy(string xml)

@@ -6,7 +6,7 @@ namespace Furesoft.Web.UI.Base
 {
     public static class HtmlBuilder
     {
-        public static string Build(object obj, bool generateInner, string name = null, Dictionary<string, string> defaultAtts = null)
+        public static string Build(UiElement obj, bool generateInner, string name = null, Dictionary<string, string> defaultAtts = null)
         {
             var props = obj.GetType().GetProperties();
             Dictionary<string, string> atts = new Dictionary<string, string>();
@@ -67,6 +67,11 @@ namespace Furesoft.Web.UI.Base
                     {
                         sb.Append(atts["Inner"] + "</" + obj.GetType().Name.ToLower() + ">");
                     }
+                }
+
+                if (!obj.Visible)
+                {
+                    return "";
                 }
 
                 return sb.ToString();
