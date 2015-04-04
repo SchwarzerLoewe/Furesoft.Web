@@ -1,17 +1,11 @@
 ﻿using System;
+using Furesoft.Web.UI.Base;
 
 namespace Furesoft.Web.UI
 {
-    public class Img
+    public class Img : UiElement
     {
-        public string Name { get; set; }
         public string Src { get; set; }
-        public Style Style { get; set; }
-
-        public Img()
-        {
-            Style = new Style();
-        }
 
         public static implicit operator string(Img btn)
         {

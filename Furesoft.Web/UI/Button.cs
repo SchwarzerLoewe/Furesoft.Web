@@ -1,17 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using Furesoft.Web.UI.Base;
 
 namespace Furesoft.Web.UI
 {
-    public class Button
+    public class Button : UiElement
     {
-        public string Name { get; set; }
-        public string Inner { get; set; }
-        public Style Style { get; set; }
-
-        public Button()
-        {
-            Style = new Style();
-        }
+        public string Text { get; set; }
 
         public static implicit operator string(Button btn)
         {
@@ -20,7 +15,11 @@ namespace Furesoft.Web.UI
 
         public override string ToString()
         {
-            return string.Format("<button typ='submit' name='{0}' style='{1}'>{2}</input>", Name, Style, Inner);
+            var d = new Dictionary<string, string>();
+            d.Add("type", "submit");
+            d.Add("text", Text);
+
+            return HtmlBuilder.Build(this, false, "input", d);
         }
     }
 }

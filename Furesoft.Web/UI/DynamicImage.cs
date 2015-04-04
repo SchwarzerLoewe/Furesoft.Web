@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Drawing;
 using System.Drawing.Imaging;
+using Furesoft.Web.UI.Base;
 
 namespace Furesoft.Web.UI
 {
     public class DynamicImage
     {
-        public string Name { get; set; }
-        public Style Style { get; set; }
         public int Width { get; private set; }
         public int Heigth { get; private set; }
 
@@ -16,7 +15,6 @@ namespace Furesoft.Web.UI
 
         public DynamicImage(int width, int height)
         {
-            Style = new Style();
             _buffer = new Bitmap(width, height);
             Width = width;
             Heigth = height;
@@ -50,7 +48,7 @@ namespace Furesoft.Web.UI
         {
             var Src = Converter.ToWebString(_buffer, ImageFormat.Bmp);
 
-            return string.Format("<img name='{0}' width='{1}' heigth='{2}' style='{3}' src='{4}' />", Name, Width, Heigth, Style, Src);
+            return Src;
         }
     }
 }

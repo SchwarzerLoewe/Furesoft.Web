@@ -1,18 +1,10 @@
 ﻿using System;
+using Furesoft.Web.UI.Base;
 
 namespace Furesoft.Web.UI
 {
-    public class Container
+    public class Container : UiElement
     {
-        public string Name { get; set; }
-        public string Inner { get; set; }
-        public Style Style { get; set; }
-
-        public Container()
-        {
-            Style = new Style();
-        }
-
         public static implicit operator string(Container btn)
         {
             return btn.ToString();
@@ -20,7 +12,7 @@ namespace Furesoft.Web.UI
 
         public override string ToString()
         {
-            return string.Format("<div name='{0}' style='{1}'>{2}</div>", Name, Style, Inner);
+            return HtmlBuilder.Build(this, false, "div", null);
         }
     }
 }

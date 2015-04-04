@@ -1,18 +1,11 @@
 ﻿using System;
+using Furesoft.Web.UI.Base;
 
 namespace Furesoft.Web.UI
 {
-    public class Link
+    public class Link : UiElement
     {
-        public string Name { get; set; }
-        public string Inner { get; set; }
         public string Href { get; set; }
-        public Style Style { get; set; }
-
-        public Link()
-        {
-            Style = new Style();
-        }
 
         public static implicit operator string(Link btn)
         {
