@@ -1,0 +1,14 @@
+﻿<AddIn name        = "Furesoft.Web"
+       author      = "Chris Anders"
+       url         = "proj://"
+       description = "Make a Website with C#">
+	
+	<Manifest>
+        <Identity name="FuresoftWebAddin" />
+    </Manifest>
+	
+	<Runtime>
+		<Import assembly = "FuresoftWebAddin.dll"/>
+	</Runtime>
+	
+</AddIn>

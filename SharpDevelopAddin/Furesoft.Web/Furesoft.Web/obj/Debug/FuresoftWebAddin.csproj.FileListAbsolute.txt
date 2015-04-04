@@ -1,0 +1,6 @@
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\SharpDevelopAddin\Furesoft.Web\Furesoft.Web\obj\Debug\FuresoftWebAddin.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\SharpDevelop\5.1\AddIns\Furesoft.Web.addin
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\SharpDevelopAddin\Furesoft.Web\Furesoft.Web\obj\Debug\FuresoftWebAddin.dll
+C:\Users\filmee24\Documents\GitHub\Furesoft.Web\SharpDevelopAddin\Furesoft.Web\Furesoft.Web\obj\Debug\FuresoftWebAddin.pdb
+C:\Program Files (x86)\SharpDevelop\5.1\AddIns\FuresoftWebAddin.dll
+C:\Program Files (x86)\SharpDevelop\5.1\AddIns\FuresoftWebAddin.pdb
